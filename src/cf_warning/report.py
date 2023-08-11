@@ -84,7 +84,7 @@ class CondaForgeWarning:
 
         for level, df in data_segmented.items():
             table = df.reset_index(drop=True).to_markdown()
-            content += f"\n## {level}\n\n{table}\n"
+            content += f"\n## {level.upper()}\n\n{table}\n"
 
         with open(index_path, "w") as f:
             f.write(content)
