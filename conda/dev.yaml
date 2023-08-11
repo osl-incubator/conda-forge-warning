@@ -1,4 +1,4 @@
-name: conda-forge-warning
+name: cf-warning
 channels:
   - nodefaults
   - conda-forge

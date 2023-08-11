@@ -1,8 +1,8 @@
 site_name: Conda-Forge Warning
 site_url: https://osl-incubator.github.io/conda-forge-warning
 repo_url: https://github.com/osl-incubator/conda-forge-warning
-docs_dir: ./
-site_dir: ../build
+docs_dir: ./docs
+site_dir: ./build
 # extra_css:
 #   - stylesheets/extra.css
 # Page tree
@@ -12,7 +12,6 @@ nav:
   - Changelog: changelog.md
   - Contributing: contributing.md
   - API: api/references.md
-  - Notebook page: example.ipynb
 theme:
   name: material
   features:
@@ -26,8 +25,8 @@ theme:
     - search.suggest
   icon:
     repo: fontawesome/brands/github
-  logo: /images/logo.png
-  favicon: /images/favicon.png
+  logo: images/logo.png
+  favicon: images/favicon.png
   palette:
     scheme: slate
     primary: white
@@ -44,8 +43,8 @@ plugins:
       enable_inventory: true
       handlers:
         python:
-          paths: [../src]
-          
+          paths: [./src]
+
           import:
             - https://docs.python.org/3/objects.inv
           options:
@@ -147,4 +146,4 @@ extra:
       icon: :material-cancel:{ .cancel }
       description: Unlikely to ever be supported or no upstream support.
 
-copyright: "Copyright &copy; 2022, Conda-Forge Warning Team"
+copyright: "Copyright &copy; 2023, Conda-Forge Warning Team"

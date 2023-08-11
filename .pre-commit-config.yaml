@@ -37,7 +37,7 @@ repos:
       name: mypy
       entry: mypy
       language: system
-      files: "src/cf_warning"
+      files: "./"
       pass_filenames: true
       types:
         - python
@@ -68,7 +68,7 @@ repos:
       name: pydocstyle
       entry: pydocstyle
       language: system
-      files: "src/cf_warning"
+      files: "./"
       pass_filenames: true
       types:
         - python
@@ -77,7 +77,7 @@ repos:
       name: vulture
       entry: vulture
       language: system
-      files: "src/cf_warning"
+      files: "./"
       description: Find unused Python code.
       pass_filenames: true
       types:
@@ -87,7 +87,7 @@ repos:
       name: mccabe
       entry: python -m mccabe --min 10
       language: system
-      files: "src/cf_warning"
+      files: "./"
       pass_filenames: true
       types:
         - python

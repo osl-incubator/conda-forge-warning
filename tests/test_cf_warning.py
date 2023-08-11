@@ -1,13 +1,8 @@
-"""Tests for cf_warning package."""
-import pytest
+from pathlib import Path
+
+from cf_warning import CondaForgeWarning
 
 
-@pytest.fixture
-def response_pytest():
-    """Sample pytest fixture."""
-    return True
-
-
-def test_content_pytest():
-    """Test with pytest."""
-    assert True
+def test_cfwarning():
+    report = CondaForgeWarning()
+    report.run()
