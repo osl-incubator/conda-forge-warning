@@ -1,0 +1,10 @@
+name: conda-forge-warning
+channels:
+  - nodefaults
+  - conda-forge
+dependencies:
+  - python >=3.8.1
+  - pip
+  - poetry
+  - nodejs  # used by semantic-release
+  - shellcheck
