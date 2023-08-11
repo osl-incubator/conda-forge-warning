@@ -1,5 +1,7 @@
+# Conda-Forge Warning Panel
 
-# critical
+
+## CRITICAL
 
 |    | name                                   | url                                                                   |   open_prs |   open_issues |
 |---:|:---------------------------------------|:----------------------------------------------------------------------|-----------:|--------------:|
@@ -15,7 +17,7 @@
 |  9 | trilinos-feedstock                     | https://github.com/conda-forge/trilinos-feedstock                     |         10 |             4 |
 | 10 | ocaml-feedstock                        | https://github.com/conda-forge/ocaml-feedstock                        |         10 |             2 |
 
-# danger
+## DANGER
 
 |    | name                           | url                                                           |   open_prs |   open_issues |
 |---:|:-------------------------------|:--------------------------------------------------------------|-----------:|--------------:|
@@ -45,7 +47,7 @@
 | 23 | suitesparse-feedstock          | https://github.com/conda-forge/suitesparse-feedstock          |          5 |             2 |
 | 24 | make-feedstock                 | https://github.com/conda-forge/make-feedstock                 |          5 |             1 |
 
-# warning
+## WARNING
 
 |     | name                                | url                                                                |   open_prs |   open_issues |
 |----:|:------------------------------------|:-------------------------------------------------------------------|-----------:|--------------:|
@@ -267,20 +269,21 @@
 | 215 | openbabel-feedstock                 | https://github.com/conda-forge/openbabel-feedstock                 |          1 |             1 |
 | 216 | orange3-feedstock                   | https://github.com/conda-forge/orange3-feedstock                   |          1 |             1 |
 | 217 | orbit-ml-feedstock                  | https://github.com/conda-forge/orbit-ml-feedstock                  |          1 |             1 |
-| 218 | patch-feedstock                     | https://github.com/conda-forge/patch-feedstock                     |          1 |             1 |
-| 219 | pybind11-feedstock                  | https://github.com/conda-forge/pybind11-feedstock                  |          1 |             1 |
-| 220 | pyferret-feedstock                  | https://github.com/conda-forge/pyferret-feedstock                  |          1 |             1 |
-| 221 | pyopengl-feedstock                  | https://github.com/conda-forge/pyopengl-feedstock                  |          1 |             1 |
-| 222 | python-annoy-feedstock              | https://github.com/conda-forge/python-annoy-feedstock              |          1 |             1 |
-| 223 | python-snappy-feedstock             | https://github.com/conda-forge/python-snappy-feedstock             |          1 |             1 |
-| 224 | qscintilla2-feedstock               | https://github.com/conda-forge/qscintilla2-feedstock               |          1 |             1 |
-| 225 | r-sf-feedstock                      | https://github.com/conda-forge/r-sf-feedstock                      |          1 |             1 |
-| 226 | rever-feedstock                     | https://github.com/conda-forge/rever-feedstock                     |          1 |             1 |
-| 227 | rsync-feedstock                     | https://github.com/conda-forge/rsync-feedstock                     |          1 |             1 |
-| 228 | scalapack-feedstock                 | https://github.com/conda-forge/scalapack-feedstock                 |          1 |             1 |
-| 229 | scs-feedstock                       | https://github.com/conda-forge/scs-feedstock                       |          1 |             1 |
-| 230 | superset-feedstock                  | https://github.com/conda-forge/superset-feedstock                  |          1 |             1 |
-| 231 | vim-feedstock                       | https://github.com/conda-forge/vim-feedstock                       |          1 |             1 |
-| 232 | vowpalwabbit-feedstock              | https://github.com/conda-forge/vowpalwabbit-feedstock              |          1 |             1 |
-| 233 | watchdog-feedstock                  | https://github.com/conda-forge/watchdog-feedstock                  |          1 |             1 |
-| 234 | zstd-feedstock                      | https://github.com/conda-forge/zstd-feedstock                      |          1 |             1 |
+| 218 | pango-feedstock                     | https://github.com/conda-forge/pango-feedstock                     |          1 |             1 |
+| 219 | patch-feedstock                     | https://github.com/conda-forge/patch-feedstock                     |          1 |             1 |
+| 220 | pybind11-feedstock                  | https://github.com/conda-forge/pybind11-feedstock                  |          1 |             1 |
+| 221 | pyferret-feedstock                  | https://github.com/conda-forge/pyferret-feedstock                  |          1 |             1 |
+| 222 | pyopengl-feedstock                  | https://github.com/conda-forge/pyopengl-feedstock                  |          1 |             1 |
+| 223 | python-annoy-feedstock              | https://github.com/conda-forge/python-annoy-feedstock              |          1 |             1 |
+| 224 | python-snappy-feedstock             | https://github.com/conda-forge/python-snappy-feedstock             |          1 |             1 |
+| 225 | qscintilla2-feedstock               | https://github.com/conda-forge/qscintilla2-feedstock               |          1 |             1 |
+| 226 | r-sf-feedstock                      | https://github.com/conda-forge/r-sf-feedstock                      |          1 |             1 |
+| 227 | rever-feedstock                     | https://github.com/conda-forge/rever-feedstock                     |          1 |             1 |
+| 228 | rsync-feedstock                     | https://github.com/conda-forge/rsync-feedstock                     |          1 |             1 |
+| 229 | scalapack-feedstock                 | https://github.com/conda-forge/scalapack-feedstock                 |          1 |             1 |
+| 230 | scs-feedstock                       | https://github.com/conda-forge/scs-feedstock                       |          1 |             1 |
+| 231 | superset-feedstock                  | https://github.com/conda-forge/superset-feedstock                  |          1 |             1 |
+| 232 | vim-feedstock                       | https://github.com/conda-forge/vim-feedstock                       |          1 |             1 |
+| 233 | vowpalwabbit-feedstock              | https://github.com/conda-forge/vowpalwabbit-feedstock              |          1 |             1 |
+| 234 | watchdog-feedstock                  | https://github.com/conda-forge/watchdog-feedstock                  |          1 |             1 |
+| 235 | zstd-feedstock                      | https://github.com/conda-forge/zstd-feedstock                      |          1 |             1 |
