@@ -1,0 +1,2351 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://osl-incubator.github.io/conda-forge-warning/">
+      
+      
+      
+        <link rel="next" href="installation/">
+      
+      <link rel="icon" href="images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
+    
+    
+      
+        <title>Conda-Forge Warning</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.eebd395e.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="white" data-md-color-accent="lime">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#critical" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Conda-Forge Warning" class="md-header__button md-logo" aria-label="Conda-Forge Warning" data-md-component="logo">
+      
+  <img src="images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Conda-Forge Warning
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              critical
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/osl-incubator/conda-forge-warning" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Conda-Forge Warning" class="md-nav__button md-logo" aria-label="Conda-Forge Warning" data-md-component="logo">
+      
+  <img src="images/logo.png" alt="logo">
+
+    </a>
+    Conda-Forge Warning
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/osl-incubator/conda-forge-warning" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        critical
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="changelog/" class="md-nav__link">
+        Changelog
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="contributing/" class="md-nav__link">
+        Contributing
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="api/references/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="critical">critical</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">url</th>
+<th style="text-align: right;">open_prs</th>
+<th style="text-align: right;">open_issues</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">conda-forge-pinning-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/conda-forge-pinning-feedstock" title="GitHub Repository: conda-forge/conda-forge-pinning-feedstock">conda-forge/conda-forge-pinning-feedstock</a></td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">38</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">pytrilinos-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pytrilinos-feedstock" title="GitHub Repository: conda-forge/pytrilinos-feedstock">conda-forge/pytrilinos-feedstock</a></td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">conda-forge-repodata-patches-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/conda-forge-repodata-patches-feedstock" title="GitHub Repository: conda-forge/conda-forge-repodata-patches-feedstock">conda-forge/conda-forge-repodata-patches-feedstock</a></td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">pytorch-cpu-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pytorch-cpu-feedstock" title="GitHub Repository: conda-forge/pytorch-cpu-feedstock">conda-forge/pytorch-cpu-feedstock</a></td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">caffe-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/caffe-feedstock" title="GitHub Repository: conda-forge/caffe-feedstock">conda-forge/caffe-feedstock</a></td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">cyclus-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/cyclus-feedstock" title="GitHub Repository: conda-forge/cyclus-feedstock">conda-forge/cyclus-feedstock</a></td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">openimageio-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/openimageio-feedstock" title="GitHub Repository: conda-forge/openimageio-feedstock">conda-forge/openimageio-feedstock</a></td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">coremltools-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/coremltools-feedstock" title="GitHub Repository: conda-forge/coremltools-feedstock">conda-forge/coremltools-feedstock</a></td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">python-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/python-feedstock" title="GitHub Repository: conda-forge/python-feedstock">conda-forge/python-feedstock</a></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">34</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">trilinos-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/trilinos-feedstock" title="GitHub Repository: conda-forge/trilinos-feedstock">conda-forge/trilinos-feedstock</a></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">ocaml-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/ocaml-feedstock" title="GitHub Repository: conda-forge/ocaml-feedstock">conda-forge/ocaml-feedstock</a></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table>
+<h1 id="danger">danger</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">url</th>
+<th style="text-align: right;">open_prs</th>
+<th style="text-align: right;">open_issues</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ghc-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/ghc-feedstock" title="GitHub Repository: conda-forge/ghc-feedstock">conda-forge/ghc-feedstock</a></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">conda-standalone-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/conda-standalone-feedstock" title="GitHub Repository: conda-forge/conda-standalone-feedstock">conda-forge/conda-standalone-feedstock</a></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">blas-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/blas-feedstock" title="GitHub Repository: conda-forge/blas-feedstock">conda-forge/blas-feedstock</a></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">conda-forge-ci-setup-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/conda-forge-ci-setup-feedstock" title="GitHub Repository: conda-forge/conda-forge-ci-setup-feedstock">conda-forge/conda-forge-ci-setup-feedstock</a></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ray-packages-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/ray-packages-feedstock" title="GitHub Repository: conda-forge/ray-packages-feedstock">conda-forge/ray-packages-feedstock</a></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">conda-verify-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/conda-verify-feedstock" title="GitHub Repository: conda-forge/conda-verify-feedstock">conda-forge/conda-verify-feedstock</a></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">tensorflow-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/tensorflow-feedstock" title="GitHub Repository: conda-forge/tensorflow-feedstock">conda-forge/tensorflow-feedstock</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">26</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">julia-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/julia-feedstock" title="GitHub Repository: conda-forge/julia-feedstock">conda-forge/julia-feedstock</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">mumps-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/mumps-feedstock" title="GitHub Repository: conda-forge/mumps-feedstock">conda-forge/mumps-feedstock</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">nodejs-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/nodejs-feedstock" title="GitHub Repository: conda-forge/nodejs-feedstock">conda-forge/nodejs-feedstock</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">pyqt-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pyqt-feedstock" title="GitHub Repository: conda-forge/pyqt-feedstock">conda-forge/pyqt-feedstock</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">emacs-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/emacs-feedstock" title="GitHub Repository: conda-forge/emacs-feedstock">conda-forge/emacs-feedstock</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">arrow-cpp-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/arrow-cpp-feedstock" title="GitHub Repository: conda-forge/arrow-cpp-feedstock">conda-forge/arrow-cpp-feedstock</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">faiss-split-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/faiss-split-feedstock" title="GitHub Repository: conda-forge/faiss-split-feedstock">conda-forge/faiss-split-feedstock</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">ruby-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/ruby-feedstock" title="GitHub Repository: conda-forge/ruby-feedstock">conda-forge/ruby-feedstock</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">geant4-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/geant4-feedstock" title="GitHub Repository: conda-forge/geant4-feedstock">conda-forge/geant4-feedstock</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">r-base-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/r-base-feedstock" title="GitHub Repository: conda-forge/r-base-feedstock">conda-forge/r-base-feedstock</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">cudatoolkit-dev-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/cudatoolkit-dev-feedstock" title="GitHub Repository: conda-forge/cudatoolkit-dev-feedstock">conda-forge/cudatoolkit-dev-feedstock</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">rdkit-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/rdkit-feedstock" title="GitHub Repository: conda-forge/rdkit-feedstock">conda-forge/rdkit-feedstock</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">cmake-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/cmake-feedstock" title="GitHub Repository: conda-forge/cmake-feedstock">conda-forge/cmake-feedstock</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">gdb-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/gdb-feedstock" title="GitHub Repository: conda-forge/gdb-feedstock">conda-forge/gdb-feedstock</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td style="text-align: left;">fenics-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/fenics-feedstock" title="GitHub Repository: conda-forge/fenics-feedstock">conda-forge/fenics-feedstock</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">openblas-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/openblas-feedstock" title="GitHub Repository: conda-forge/openblas-feedstock">conda-forge/openblas-feedstock</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">23</td>
+<td style="text-align: left;">suitesparse-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/suitesparse-feedstock" title="GitHub Repository: conda-forge/suitesparse-feedstock">conda-forge/suitesparse-feedstock</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">make-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/make-feedstock" title="GitHub Repository: conda-forge/make-feedstock">conda-forge/make-feedstock</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<h1 id="warning">warning</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">url</th>
+<th style="text-align: right;">open_prs</th>
+<th style="text-align: right;">open_issues</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">pytrilinos-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pytrilinos-feedstock" title="GitHub Repository: conda-forge/pytrilinos-feedstock">conda-forge/pytrilinos-feedstock</a></td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">caffe-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/caffe-feedstock" title="GitHub Repository: conda-forge/caffe-feedstock">conda-forge/caffe-feedstock</a></td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">cyclus-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/cyclus-feedstock" title="GitHub Repository: conda-forge/cyclus-feedstock">conda-forge/cyclus-feedstock</a></td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">openimageio-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/openimageio-feedstock" title="GitHub Repository: conda-forge/openimageio-feedstock">conda-forge/openimageio-feedstock</a></td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">coremltools-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/coremltools-feedstock" title="GitHub Repository: conda-forge/coremltools-feedstock">conda-forge/coremltools-feedstock</a></td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">trilinos-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/trilinos-feedstock" title="GitHub Repository: conda-forge/trilinos-feedstock">conda-forge/trilinos-feedstock</a></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">ocaml-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/ocaml-feedstock" title="GitHub Repository: conda-forge/ocaml-feedstock">conda-forge/ocaml-feedstock</a></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ghc-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/ghc-feedstock" title="GitHub Repository: conda-forge/ghc-feedstock">conda-forge/ghc-feedstock</a></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">conda-standalone-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/conda-standalone-feedstock" title="GitHub Repository: conda-forge/conda-standalone-feedstock">conda-forge/conda-standalone-feedstock</a></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">conda-verify-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/conda-verify-feedstock" title="GitHub Repository: conda-forge/conda-verify-feedstock">conda-forge/conda-verify-feedstock</a></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">mumps-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/mumps-feedstock" title="GitHub Repository: conda-forge/mumps-feedstock">conda-forge/mumps-feedstock</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">nodejs-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/nodejs-feedstock" title="GitHub Repository: conda-forge/nodejs-feedstock">conda-forge/nodejs-feedstock</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">arrow-cpp-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/arrow-cpp-feedstock" title="GitHub Repository: conda-forge/arrow-cpp-feedstock">conda-forge/arrow-cpp-feedstock</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">faiss-split-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/faiss-split-feedstock" title="GitHub Repository: conda-forge/faiss-split-feedstock">conda-forge/faiss-split-feedstock</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">ruby-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/ruby-feedstock" title="GitHub Repository: conda-forge/ruby-feedstock">conda-forge/ruby-feedstock</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">geant4-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/geant4-feedstock" title="GitHub Repository: conda-forge/geant4-feedstock">conda-forge/geant4-feedstock</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">cmake-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/cmake-feedstock" title="GitHub Repository: conda-forge/cmake-feedstock">conda-forge/cmake-feedstock</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">gdb-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/gdb-feedstock" title="GitHub Repository: conda-forge/gdb-feedstock">conda-forge/gdb-feedstock</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">fenics-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/fenics-feedstock" title="GitHub Repository: conda-forge/fenics-feedstock">conda-forge/fenics-feedstock</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">openblas-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/openblas-feedstock" title="GitHub Repository: conda-forge/openblas-feedstock">conda-forge/openblas-feedstock</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">suitesparse-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/suitesparse-feedstock" title="GitHub Repository: conda-forge/suitesparse-feedstock">conda-forge/suitesparse-feedstock</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td style="text-align: left;">make-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/make-feedstock" title="GitHub Repository: conda-forge/make-feedstock">conda-forge/make-feedstock</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">opencv-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/opencv-feedstock" title="GitHub Repository: conda-forge/opencv-feedstock">conda-forge/opencv-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">23</td>
+</tr>
+<tr>
+<td style="text-align: right;">23</td>
+<td style="text-align: left;">clangdev-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/clangdev-feedstock" title="GitHub Repository: conda-forge/clangdev-feedstock">conda-forge/clangdev-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">openmm-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/openmm-feedstock" title="GitHub Repository: conda-forge/openmm-feedstock">conda-forge/openmm-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">qt-main-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/qt-main-feedstock" title="GitHub Repository: conda-forge/qt-main-feedstock">conda-forge/qt-main-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: right;">26</td>
+<td style="text-align: left;">tk-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/tk-feedstock" title="GitHub Repository: conda-forge/tk-feedstock">conda-forge/tk-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: right;">27</td>
+<td style="text-align: left;">llvmdev-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/llvmdev-feedstock" title="GitHub Repository: conda-forge/llvmdev-feedstock">conda-forge/llvmdev-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">freetype-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/freetype-feedstock" title="GitHub Repository: conda-forge/freetype-feedstock">conda-forge/freetype-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">29</td>
+<td style="text-align: left;">fbprophet-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/fbprophet-feedstock" title="GitHub Repository: conda-forge/fbprophet-feedstock">conda-forge/fbprophet-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">isce2-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/isce2-feedstock" title="GitHub Repository: conda-forge/isce2-feedstock">conda-forge/isce2-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">31</td>
+<td style="text-align: left;">libarchive-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/libarchive-feedstock" title="GitHub Repository: conda-forge/libarchive-feedstock">conda-forge/libarchive-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">re2-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/re2-feedstock" title="GitHub Repository: conda-forge/re2-feedstock">conda-forge/re2-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">33</td>
+<td style="text-align: left;">xz-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/xz-feedstock" title="GitHub Repository: conda-forge/xz-feedstock">conda-forge/xz-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">34</td>
+<td style="text-align: left;">dask-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/dask-feedstock" title="GitHub Repository: conda-forge/dask-feedstock">conda-forge/dask-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">gnuradio-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/gnuradio-feedstock" title="GitHub Repository: conda-forge/gnuradio-feedstock">conda-forge/gnuradio-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">pynio-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pynio-feedstock" title="GitHub Repository: conda-forge/pynio-feedstock">conda-forge/pynio-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">ruamel_yaml-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/ruamel_yaml-feedstock" title="GitHub Repository: conda-forge/ruamel_yaml-feedstock">conda-forge/ruamel_yaml-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">38</td>
+<td style="text-align: left;">gym-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/gym-feedstock" title="GitHub Repository: conda-forge/gym-feedstock">conda-forge/gym-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">39</td>
+<td style="text-align: left;">mono-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/mono-feedstock" title="GitHub Repository: conda-forge/mono-feedstock">conda-forge/mono-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">python-primesieve-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/python-primesieve-feedstock" title="GitHub Repository: conda-forge/python-primesieve-feedstock">conda-forge/python-primesieve-feedstock</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">41</td>
+<td style="text-align: left;">toolchain-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/toolchain-feedstock" title="GitHub Repository: conda-forge/toolchain-feedstock">conda-forge/toolchain-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: right;">42</td>
+<td style="text-align: left;">boost-cpp-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/boost-cpp-feedstock" title="GitHub Repository: conda-forge/boost-cpp-feedstock">conda-forge/boost-cpp-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td style="text-align: right;">43</td>
+<td style="text-align: left;">octave-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/octave-feedstock" title="GitHub Repository: conda-forge/octave-feedstock">conda-forge/octave-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">boost-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/boost-feedstock" title="GitHub Repository: conda-forge/boost-feedstock">conda-forge/boost-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: right;">45</td>
+<td style="text-align: left;">neuron-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/neuron-feedstock" title="GitHub Repository: conda-forge/neuron-feedstock">conda-forge/neuron-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">46</td>
+<td style="text-align: left;">scipy-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/scipy-feedstock" title="GitHub Repository: conda-forge/scipy-feedstock">conda-forge/scipy-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">47</td>
+<td style="text-align: left;">clang-compiler-activation-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/clang-compiler-activation-feedstock" title="GitHub Repository: conda-forge/clang-compiler-activation-feedstock">conda-forge/clang-compiler-activation-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">48</td>
+<td style="text-align: left;">metis-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/metis-feedstock" title="GitHub Repository: conda-forge/metis-feedstock">conda-forge/metis-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">49</td>
+<td style="text-align: left;">conda-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/conda-feedstock" title="GitHub Repository: conda-forge/conda-feedstock">conda-forge/conda-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">grpc-cpp-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/grpc-cpp-feedstock" title="GitHub Repository: conda-forge/grpc-cpp-feedstock">conda-forge/grpc-cpp-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">51</td>
+<td style="text-align: left;">numpy-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/numpy-feedstock" title="GitHub Repository: conda-forge/numpy-feedstock">conda-forge/numpy-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">52</td>
+<td style="text-align: left;">google-cloud-cpp-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/google-cloud-cpp-feedstock" title="GitHub Repository: conda-forge/google-cloud-cpp-feedstock">conda-forge/google-cloud-cpp-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">53</td>
+<td style="text-align: left;">hdf4-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/hdf4-feedstock" title="GitHub Repository: conda-forge/hdf4-feedstock">conda-forge/hdf4-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">54</td>
+<td style="text-align: left;">jupyter_core-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/jupyter_core-feedstock" title="GitHub Repository: conda-forge/jupyter_core-feedstock">conda-forge/jupyter_core-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">55</td>
+<td style="text-align: left;">libnetcdf-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/libnetcdf-feedstock" title="GitHub Repository: conda-forge/libnetcdf-feedstock">conda-forge/libnetcdf-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">56</td>
+<td style="text-align: left;">lief-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/lief-feedstock" title="GitHub Repository: conda-forge/lief-feedstock">conda-forge/lief-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">57</td>
+<td style="text-align: left;">mdanalysis-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/mdanalysis-feedstock" title="GitHub Repository: conda-forge/mdanalysis-feedstock">conda-forge/mdanalysis-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">58</td>
+<td style="text-align: left;">mypy-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/mypy-feedstock" title="GitHub Repository: conda-forge/mypy-feedstock">conda-forge/mypy-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">59</td>
+<td style="text-align: left;">ncurses-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/ncurses-feedstock" title="GitHub Repository: conda-forge/ncurses-feedstock">conda-forge/ncurses-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">numba-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/numba-feedstock" title="GitHub Repository: conda-forge/numba-feedstock">conda-forge/numba-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">61</td>
+<td style="text-align: left;">ompl-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/ompl-feedstock" title="GitHub Repository: conda-forge/ompl-feedstock">conda-forge/ompl-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">62</td>
+<td style="text-align: left;">onnxruntime-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/onnxruntime-feedstock" title="GitHub Repository: conda-forge/onnxruntime-feedstock">conda-forge/onnxruntime-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">63</td>
+<td style="text-align: left;">theano-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/theano-feedstock" title="GitHub Repository: conda-forge/theano-feedstock">conda-forge/theano-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">64</td>
+<td style="text-align: left;">configurable-http-proxy-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/configurable-http-proxy-feedstock" title="GitHub Repository: conda-forge/configurable-http-proxy-feedstock">conda-forge/configurable-http-proxy-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">65</td>
+<td style="text-align: left;">mpfr-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/mpfr-feedstock" title="GitHub Repository: conda-forge/mpfr-feedstock">conda-forge/mpfr-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">66</td>
+<td style="text-align: left;">openmc-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/openmc-feedstock" title="GitHub Repository: conda-forge/openmc-feedstock">conda-forge/openmc-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">67</td>
+<td style="text-align: left;">openscenegraph-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/openscenegraph-feedstock" title="GitHub Repository: conda-forge/openscenegraph-feedstock">conda-forge/openscenegraph-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">68</td>
+<td style="text-align: left;">pandoc-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pandoc-feedstock" title="GitHub Repository: conda-forge/pandoc-feedstock">conda-forge/pandoc-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">69</td>
+<td style="text-align: left;">prefect-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/prefect-feedstock" title="GitHub Repository: conda-forge/prefect-feedstock">conda-forge/prefect-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">70</td>
+<td style="text-align: left;">pycrypto-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pycrypto-feedstock" title="GitHub Repository: conda-forge/pycrypto-feedstock">conda-forge/pycrypto-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">71</td>
+<td style="text-align: left;">pystan-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pystan-feedstock" title="GitHub Repository: conda-forge/pystan-feedstock">conda-forge/pystan-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">72</td>
+<td style="text-align: left;">sdl2-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/sdl2-feedstock" title="GitHub Repository: conda-forge/sdl2-feedstock">conda-forge/sdl2-feedstock</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">73</td>
+<td style="text-align: left;">vtk-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/vtk-feedstock" title="GitHub Repository: conda-forge/vtk-feedstock">conda-forge/vtk-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td style="text-align: right;">74</td>
+<td style="text-align: left;">root-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/root-feedstock" title="GitHub Repository: conda-forge/root-feedstock">conda-forge/root-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">hdf5-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/hdf5-feedstock" title="GitHub Repository: conda-forge/hdf5-feedstock">conda-forge/hdf5-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td style="text-align: right;">76</td>
+<td style="text-align: left;">ctng-compilers-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/ctng-compilers-feedstock" title="GitHub Repository: conda-forge/ctng-compilers-feedstock">conda-forge/ctng-compilers-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td style="text-align: right;">77</td>
+<td style="text-align: left;">openjdk-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/openjdk-feedstock" title="GitHub Repository: conda-forge/openjdk-feedstock">conda-forge/openjdk-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td style="text-align: right;">78</td>
+<td style="text-align: left;">h5py-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/h5py-feedstock" title="GitHub Repository: conda-forge/h5py-feedstock">conda-forge/h5py-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: right;">79</td>
+<td style="text-align: left;">python-spams-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/python-spams-feedstock" title="GitHub Repository: conda-forge/python-spams-feedstock">conda-forge/python-spams-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">cupy-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/cupy-feedstock" title="GitHub Repository: conda-forge/cupy-feedstock">conda-forge/cupy-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">81</td>
+<td style="text-align: left;">jupyter-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/jupyter-feedstock" title="GitHub Repository: conda-forge/jupyter-feedstock">conda-forge/jupyter-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">82</td>
+<td style="text-align: left;">pypy3.6-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pypy3.6-feedstock" title="GitHub Repository: conda-forge/pypy3.6-feedstock">conda-forge/pypy3.6-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">83</td>
+<td style="text-align: left;">rpy2-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/rpy2-feedstock" title="GitHub Repository: conda-forge/rpy2-feedstock">conda-forge/rpy2-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">84</td>
+<td style="text-align: left;">scipoptsuite-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/scipoptsuite-feedstock" title="GitHub Repository: conda-forge/scipoptsuite-feedstock">conda-forge/scipoptsuite-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">85</td>
+<td style="text-align: left;">dbus-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/dbus-feedstock" title="GitHub Repository: conda-forge/dbus-feedstock">conda-forge/dbus-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">86</td>
+<td style="text-align: left;">torchvision-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/torchvision-feedstock" title="GitHub Repository: conda-forge/torchvision-feedstock">conda-forge/torchvision-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">87</td>
+<td style="text-align: left;">cppcheck-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/cppcheck-feedstock" title="GitHub Repository: conda-forge/cppcheck-feedstock">conda-forge/cppcheck-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">88</td>
+<td style="text-align: left;">distributed-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/distributed-feedstock" title="GitHub Repository: conda-forge/distributed-feedstock">conda-forge/distributed-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">89</td>
+<td style="text-align: left;">kaldi-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/kaldi-feedstock" title="GitHub Repository: conda-forge/kaldi-feedstock">conda-forge/kaldi-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">90</td>
+<td style="text-align: left;">autoconf-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/autoconf-feedstock" title="GitHub Repository: conda-forge/autoconf-feedstock">conda-forge/autoconf-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">91</td>
+<td style="text-align: left;">bazel-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/bazel-feedstock" title="GitHub Repository: conda-forge/bazel-feedstock">conda-forge/bazel-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">92</td>
+<td style="text-align: left;">cling-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/cling-feedstock" title="GitHub Repository: conda-forge/cling-feedstock">conda-forge/cling-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">93</td>
+<td style="text-align: left;">jaxlib-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/jaxlib-feedstock" title="GitHub Repository: conda-forge/jaxlib-feedstock">conda-forge/jaxlib-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">94</td>
+<td style="text-align: left;">jemalloc-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/jemalloc-feedstock" title="GitHub Repository: conda-forge/jemalloc-feedstock">conda-forge/jemalloc-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">95</td>
+<td style="text-align: left;">pandas-datareader-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pandas-datareader-feedstock" title="GitHub Repository: conda-forge/pandas-datareader-feedstock">conda-forge/pandas-datareader-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">96</td>
+<td style="text-align: left;">pandas-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pandas-feedstock" title="GitHub Repository: conda-forge/pandas-feedstock">conda-forge/pandas-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">97</td>
+<td style="text-align: left;">pandas-profiling-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pandas-profiling-feedstock" title="GitHub Repository: conda-forge/pandas-profiling-feedstock">conda-forge/pandas-profiling-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">98</td>
+<td style="text-align: left;">pocl-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pocl-feedstock" title="GitHub Repository: conda-forge/pocl-feedstock">conda-forge/pocl-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">99</td>
+<td style="text-align: left;">pyfai-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pyfai-feedstock" title="GitHub Repository: conda-forge/pyfai-feedstock">conda-forge/pyfai-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">100</td>
+<td style="text-align: left;">sed-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/sed-feedstock" title="GitHub Repository: conda-forge/sed-feedstock">conda-forge/sed-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">uwsgi-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/uwsgi-feedstock" title="GitHub Repository: conda-forge/uwsgi-feedstock">conda-forge/uwsgi-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">102</td>
+<td style="text-align: left;">awscli-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/awscli-feedstock" title="GitHub Repository: conda-forge/awscli-feedstock">conda-forge/awscli-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">103</td>
+<td style="text-align: left;">basemap-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/basemap-feedstock" title="GitHub Repository: conda-forge/basemap-feedstock">conda-forge/basemap-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">104</td>
+<td style="text-align: left;">capnproto-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/capnproto-feedstock" title="GitHub Repository: conda-forge/capnproto-feedstock">conda-forge/capnproto-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">105</td>
+<td style="text-align: left;">flytekit-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/flytekit-feedstock" title="GitHub Repository: conda-forge/flytekit-feedstock">conda-forge/flytekit-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">106</td>
+<td style="text-align: left;">freeglut-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/freeglut-feedstock" title="GitHub Repository: conda-forge/freeglut-feedstock">conda-forge/freeglut-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">107</td>
+<td style="text-align: left;">gfortran_osx-64-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/gfortran_osx-64-feedstock" title="GitHub Repository: conda-forge/gfortran_osx-64-feedstock">conda-forge/gfortran_osx-64-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">108</td>
+<td style="text-align: left;">grpcio-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/grpcio-feedstock" title="GitHub Repository: conda-forge/grpcio-feedstock">conda-forge/grpcio-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">109</td>
+<td style="text-align: left;">jq-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/jq-feedstock" title="GitHub Repository: conda-forge/jq-feedstock">conda-forge/jq-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">110</td>
+<td style="text-align: left;">krb5-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/krb5-feedstock" title="GitHub Repository: conda-forge/krb5-feedstock">conda-forge/krb5-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">111</td>
+<td style="text-align: left;">kubernetes-helm-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/kubernetes-helm-feedstock" title="GitHub Repository: conda-forge/kubernetes-helm-feedstock">conda-forge/kubernetes-helm-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">112</td>
+<td style="text-align: left;">libgfortran-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/libgfortran-feedstock" title="GitHub Repository: conda-forge/libgfortran-feedstock">conda-forge/libgfortran-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">113</td>
+<td style="text-align: left;">micromamba-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/micromamba-feedstock" title="GitHub Repository: conda-forge/micromamba-feedstock">conda-forge/micromamba-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">114</td>
+<td style="text-align: left;">mysql-connector-python-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/mysql-connector-python-feedstock" title="GitHub Repository: conda-forge/mysql-connector-python-feedstock">conda-forge/mysql-connector-python-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">115</td>
+<td style="text-align: left;">netcdf4-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/netcdf4-feedstock" title="GitHub Repository: conda-forge/netcdf4-feedstock">conda-forge/netcdf4-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">116</td>
+<td style="text-align: left;">nginx-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/nginx-feedstock" title="GitHub Repository: conda-forge/nginx-feedstock">conda-forge/nginx-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">117</td>
+<td style="text-align: left;">nlopt-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/nlopt-feedstock" title="GitHub Repository: conda-forge/nlopt-feedstock">conda-forge/nlopt-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">118</td>
+<td style="text-align: left;">pixman-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pixman-feedstock" title="GitHub Repository: conda-forge/pixman-feedstock">conda-forge/pixman-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">119</td>
+<td style="text-align: left;">popt-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/popt-feedstock" title="GitHub Repository: conda-forge/popt-feedstock">conda-forge/popt-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">postgresql-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/postgresql-feedstock" title="GitHub Repository: conda-forge/postgresql-feedstock">conda-forge/postgresql-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">121</td>
+<td style="text-align: left;">python-confluent-kafka-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/python-confluent-kafka-feedstock" title="GitHub Repository: conda-forge/python-confluent-kafka-feedstock">conda-forge/python-confluent-kafka-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">122</td>
+<td style="text-align: left;">qwtpolar-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/qwtpolar-feedstock" title="GitHub Repository: conda-forge/qwtpolar-feedstock">conda-forge/qwtpolar-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">123</td>
+<td style="text-align: left;">rubinenv-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/rubinenv-feedstock" title="GitHub Repository: conda-forge/rubinenv-feedstock">conda-forge/rubinenv-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">124</td>
+<td style="text-align: left;">sagemaker-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/sagemaker-feedstock" title="GitHub Repository: conda-forge/sagemaker-feedstock">conda-forge/sagemaker-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">125</td>
+<td style="text-align: left;">zfpy-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/zfpy-feedstock" title="GitHub Repository: conda-forge/zfpy-feedstock">conda-forge/zfpy-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">126</td>
+<td style="text-align: left;">zlib-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/zlib-feedstock" title="GitHub Repository: conda-forge/zlib-feedstock">conda-forge/zlib-feedstock</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">127</td>
+<td style="text-align: left;">git-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/git-feedstock" title="GitHub Repository: conda-forge/git-feedstock">conda-forge/git-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td style="text-align: right;">128</td>
+<td style="text-align: left;">qt-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/qt-feedstock" title="GitHub Repository: conda-forge/qt-feedstock">conda-forge/qt-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: right;">129</td>
+<td style="text-align: left;">ctng-compiler-activation-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/ctng-compiler-activation-feedstock" title="GitHub Repository: conda-forge/ctng-compiler-activation-feedstock">conda-forge/ctng-compiler-activation-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td style="text-align: right;">130</td>
+<td style="text-align: left;">nvcc-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/nvcc-feedstock" title="GitHub Repository: conda-forge/nvcc-feedstock">conda-forge/nvcc-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td style="text-align: right;">131</td>
+<td style="text-align: left;">cudatoolkit-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/cudatoolkit-feedstock" title="GitHub Repository: conda-forge/cudatoolkit-feedstock">conda-forge/cudatoolkit-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: right;">132</td>
+<td style="text-align: left;">fftw-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/fftw-feedstock" title="GitHub Repository: conda-forge/fftw-feedstock">conda-forge/fftw-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: right;">133</td>
+<td style="text-align: left;">gstreamer-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/gstreamer-feedstock" title="GitHub Repository: conda-forge/gstreamer-feedstock">conda-forge/gstreamer-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: right;">134</td>
+<td style="text-align: left;">xgboost-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/xgboost-feedstock" title="GitHub Repository: conda-forge/xgboost-feedstock">conda-forge/xgboost-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: right;">135</td>
+<td style="text-align: left;">gdcm-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/gdcm-feedstock" title="GitHub Repository: conda-forge/gdcm-feedstock">conda-forge/gdcm-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: right;">136</td>
+<td style="text-align: left;">sagelib-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/sagelib-feedstock" title="GitHub Repository: conda-forge/sagelib-feedstock">conda-forge/sagelib-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: right;">137</td>
+<td style="text-align: left;">texlive-core-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/texlive-core-feedstock" title="GitHub Repository: conda-forge/texlive-core-feedstock">conda-forge/texlive-core-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: right;">138</td>
+<td style="text-align: left;">pyfftw-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pyfftw-feedstock" title="GitHub Repository: conda-forge/pyfftw-feedstock">conda-forge/pyfftw-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">139</td>
+<td style="text-align: left;">qe-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/qe-feedstock" title="GitHub Repository: conda-forge/qe-feedstock">conda-forge/qe-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">140</td>
+<td style="text-align: left;">simbody-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/simbody-feedstock" title="GitHub Repository: conda-forge/simbody-feedstock">conda-forge/simbody-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">141</td>
+<td style="text-align: left;">coincbc-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/coincbc-feedstock" title="GitHub Repository: conda-forge/coincbc-feedstock">conda-forge/coincbc-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">142</td>
+<td style="text-align: left;">graph-tool-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/graph-tool-feedstock" title="GitHub Repository: conda-forge/graph-tool-feedstock">conda-forge/graph-tool-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">143</td>
+<td style="text-align: left;">openssl-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/openssl-feedstock" title="GitHub Repository: conda-forge/openssl-feedstock">conda-forge/openssl-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">144</td>
+<td style="text-align: left;">rust-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/rust-feedstock" title="GitHub Repository: conda-forge/rust-feedstock">conda-forge/rust-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">145</td>
+<td style="text-align: left;">stir-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/stir-feedstock" title="GitHub Repository: conda-forge/stir-feedstock">conda-forge/stir-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">146</td>
+<td style="text-align: left;">wxpython-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/wxpython-feedstock" title="GitHub Repository: conda-forge/wxpython-feedstock">conda-forge/wxpython-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">147</td>
+<td style="text-align: left;">ambertools-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/ambertools-feedstock" title="GitHub Repository: conda-forge/ambertools-feedstock">conda-forge/ambertools-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">148</td>
+<td style="text-align: left;">binutils-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/binutils-feedstock" title="GitHub Repository: conda-forge/binutils-feedstock">conda-forge/binutils-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">149</td>
+<td style="text-align: left;">curl-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/curl-feedstock" title="GitHub Repository: conda-forge/curl-feedstock">conda-forge/curl-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">150</td>
+<td style="text-align: left;">eccodes-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/eccodes-feedstock" title="GitHub Repository: conda-forge/eccodes-feedstock">conda-forge/eccodes-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">151</td>
+<td style="text-align: left;">fiona-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/fiona-feedstock" title="GitHub Repository: conda-forge/fiona-feedstock">conda-forge/fiona-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">152</td>
+<td style="text-align: left;">glpk-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/glpk-feedstock" title="GitHub Repository: conda-forge/glpk-feedstock">conda-forge/glpk-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">153</td>
+<td style="text-align: left;">itk-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/itk-feedstock" title="GitHub Repository: conda-forge/itk-feedstock">conda-forge/itk-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">154</td>
+<td style="text-align: left;">openmpi-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/openmpi-feedstock" title="GitHub Repository: conda-forge/openmpi-feedstock">conda-forge/openmpi-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">155</td>
+<td style="text-align: left;">pyembree-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pyembree-feedstock" title="GitHub Repository: conda-forge/pyembree-feedstock">conda-forge/pyembree-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">156</td>
+<td style="text-align: left;">pymc3-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pymc3-feedstock" title="GitHub Repository: conda-forge/pymc3-feedstock">conda-forge/pymc3-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">157</td>
+<td style="text-align: left;">pythran-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pythran-feedstock" title="GitHub Repository: conda-forge/pythran-feedstock">conda-forge/pythran-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">158</td>
+<td style="text-align: left;">pytorch_sparse-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pytorch_sparse-feedstock" title="GitHub Repository: conda-forge/pytorch_sparse-feedstock">conda-forge/pytorch_sparse-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">159</td>
+<td style="text-align: left;">qgis-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/qgis-feedstock" title="GitHub Repository: conda-forge/qgis-feedstock">conda-forge/qgis-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">160</td>
+<td style="text-align: left;">ruamel.yaml-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/ruamel.yaml-feedstock" title="GitHub Repository: conda-forge/ruamel.yaml-feedstock">conda-forge/ruamel.yaml-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">161</td>
+<td style="text-align: left;">vc-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/vc-feedstock" title="GitHub Repository: conda-forge/vc-feedstock">conda-forge/vc-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">162</td>
+<td style="text-align: left;">wgrib2-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/wgrib2-feedstock" title="GitHub Repository: conda-forge/wgrib2-feedstock">conda-forge/wgrib2-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">163</td>
+<td style="text-align: left;">armadillo-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/armadillo-feedstock" title="GitHub Repository: conda-forge/armadillo-feedstock">conda-forge/armadillo-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">164</td>
+<td style="text-align: left;">bullet-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/bullet-feedstock" title="GitHub Repository: conda-forge/bullet-feedstock">conda-forge/bullet-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">165</td>
+<td style="text-align: left;">django-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/django-feedstock" title="GitHub Repository: conda-forge/django-feedstock">conda-forge/django-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">166</td>
+<td style="text-align: left;">dlib-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/dlib-feedstock" title="GitHub Repository: conda-forge/dlib-feedstock">conda-forge/dlib-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">167</td>
+<td style="text-align: left;">esmpy-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/esmpy-feedstock" title="GitHub Repository: conda-forge/esmpy-feedstock">conda-forge/esmpy-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">168</td>
+<td style="text-align: left;">gsl-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/gsl-feedstock" title="GitHub Repository: conda-forge/gsl-feedstock">conda-forge/gsl-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">169</td>
+<td style="text-align: left;">inkscape-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/inkscape-feedstock" title="GitHub Repository: conda-forge/inkscape-feedstock">conda-forge/inkscape-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">170</td>
+<td style="text-align: left;">kornia-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/kornia-feedstock" title="GitHub Repository: conda-forge/kornia-feedstock">conda-forge/kornia-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">171</td>
+<td style="text-align: left;">kubernetes-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/kubernetes-feedstock" title="GitHub Repository: conda-forge/kubernetes-feedstock">conda-forge/kubernetes-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">172</td>
+<td style="text-align: left;">libcxx-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/libcxx-feedstock" title="GitHub Repository: conda-forge/libcxx-feedstock">conda-forge/libcxx-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">173</td>
+<td style="text-align: left;">libgit2-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/libgit2-feedstock" title="GitHub Repository: conda-forge/libgit2-feedstock">conda-forge/libgit2-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">174</td>
+<td style="text-align: left;">libpng-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/libpng-feedstock" title="GitHub Repository: conda-forge/libpng-feedstock">conda-forge/libpng-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">175</td>
+<td style="text-align: left;">libxml2-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/libxml2-feedstock" title="GitHub Repository: conda-forge/libxml2-feedstock">conda-forge/libxml2-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">176</td>
+<td style="text-align: left;">libzip-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/libzip-feedstock" title="GitHub Repository: conda-forge/libzip-feedstock">conda-forge/libzip-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">177</td>
+<td style="text-align: left;">mesalib-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/mesalib-feedstock" title="GitHub Repository: conda-forge/mesalib-feedstock">conda-forge/mesalib-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">178</td>
+<td style="text-align: left;">numexpr-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/numexpr-feedstock" title="GitHub Repository: conda-forge/numexpr-feedstock">conda-forge/numexpr-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">179</td>
+<td style="text-align: left;">pyspark-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pyspark-feedstock" title="GitHub Repository: conda-forge/pyspark-feedstock">conda-forge/pyspark-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">180</td>
+<td style="text-align: left;">python.app-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/python.app-feedstock" title="GitHub Repository: conda-forge/python.app-feedstock">conda-forge/python.app-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">181</td>
+<td style="text-align: left;">streamlit-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/streamlit-feedstock" title="GitHub Repository: conda-forge/streamlit-feedstock">conda-forge/streamlit-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">182</td>
+<td style="text-align: left;">vega-cli-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/vega-cli-feedstock" title="GitHub Repository: conda-forge/vega-cli-feedstock">conda-forge/vega-cli-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">183</td>
+<td style="text-align: left;">zeromq-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/zeromq-feedstock" title="GitHub Repository: conda-forge/zeromq-feedstock">conda-forge/zeromq-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">184</td>
+<td style="text-align: left;">auditwheel-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/auditwheel-feedstock" title="GitHub Repository: conda-forge/auditwheel-feedstock">conda-forge/auditwheel-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">185</td>
+<td style="text-align: left;">av-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/av-feedstock" title="GitHub Repository: conda-forge/av-feedstock">conda-forge/av-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">186</td>
+<td style="text-align: left;">bqplot-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/bqplot-feedstock" title="GitHub Repository: conda-forge/bqplot-feedstock">conda-forge/bqplot-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">187</td>
+<td style="text-align: left;">cairosvg-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/cairosvg-feedstock" title="GitHub Repository: conda-forge/cairosvg-feedstock">conda-forge/cairosvg-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">188</td>
+<td style="text-align: left;">catboost-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/catboost-feedstock" title="GitHub Repository: conda-forge/catboost-feedstock">conda-forge/catboost-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">189</td>
+<td style="text-align: left;">ccache-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/ccache-feedstock" title="GitHub Repository: conda-forge/ccache-feedstock">conda-forge/ccache-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">190</td>
+<td style="text-align: left;">conda-build-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/conda-build-feedstock" title="GitHub Repository: conda-forge/conda-build-feedstock">conda-forge/conda-build-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">191</td>
+<td style="text-align: left;">conda-smithy-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/conda-smithy-feedstock" title="GitHub Repository: conda-forge/conda-smithy-feedstock">conda-forge/conda-smithy-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">192</td>
+<td style="text-align: left;">cross-python-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/cross-python-feedstock" title="GitHub Repository: conda-forge/cross-python-feedstock">conda-forge/cross-python-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">193</td>
+<td style="text-align: left;">gflags-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/gflags-feedstock" title="GitHub Repository: conda-forge/gflags-feedstock">conda-forge/gflags-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">194</td>
+<td style="text-align: left;">gmt-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/gmt-feedstock" title="GitHub Repository: conda-forge/gmt-feedstock">conda-forge/gmt-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">195</td>
+<td style="text-align: left;">go-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/go-feedstock" title="GitHub Repository: conda-forge/go-feedstock">conda-forge/go-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">196</td>
+<td style="text-align: left;">great-expectations-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/great-expectations-feedstock" title="GitHub Repository: conda-forge/great-expectations-feedstock">conda-forge/great-expectations-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">197</td>
+<td style="text-align: left;">gymnasium-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/gymnasium-feedstock" title="GitHub Repository: conda-forge/gymnasium-feedstock">conda-forge/gymnasium-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">198</td>
+<td style="text-align: left;">idyntree-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/idyntree-feedstock" title="GitHub Repository: conda-forge/idyntree-feedstock">conda-forge/idyntree-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">199</td>
+<td style="text-align: left;">jsonnet-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/jsonnet-feedstock" title="GitHub Repository: conda-forge/jsonnet-feedstock">conda-forge/jsonnet-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">kivy-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/kivy-feedstock" title="GitHub Repository: conda-forge/kivy-feedstock">conda-forge/kivy-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">201</td>
+<td style="text-align: left;">kiwisolver-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/kiwisolver-feedstock" title="GitHub Repository: conda-forge/kiwisolver-feedstock">conda-forge/kiwisolver-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">202</td>
+<td style="text-align: left;">lapack-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/lapack-feedstock" title="GitHub Repository: conda-forge/lapack-feedstock">conda-forge/lapack-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">203</td>
+<td style="text-align: left;">lemon-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/lemon-feedstock" title="GitHub Repository: conda-forge/lemon-feedstock">conda-forge/lemon-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">204</td>
+<td style="text-align: left;">libsolv-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/libsolv-feedstock" title="GitHub Repository: conda-forge/libsolv-feedstock">conda-forge/libsolv-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">205</td>
+<td style="text-align: left;">line_profiler-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/line_profiler-feedstock" title="GitHub Repository: conda-forge/line_profiler-feedstock">conda-forge/line_profiler-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">206</td>
+<td style="text-align: left;">llvmlite-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/llvmlite-feedstock" title="GitHub Repository: conda-forge/llvmlite-feedstock">conda-forge/llvmlite-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">207</td>
+<td style="text-align: left;">mamba-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/mamba-feedstock" title="GitHub Repository: conda-forge/mamba-feedstock">conda-forge/mamba-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">208</td>
+<td style="text-align: left;">matplotlib-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/matplotlib-feedstock" title="GitHub Repository: conda-forge/matplotlib-feedstock">conda-forge/matplotlib-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">209</td>
+<td style="text-align: left;">mdtraj-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/mdtraj-feedstock" title="GitHub Repository: conda-forge/mdtraj-feedstock">conda-forge/mdtraj-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">210</td>
+<td style="text-align: left;">mlflow-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/mlflow-feedstock" title="GitHub Repository: conda-forge/mlflow-feedstock">conda-forge/mlflow-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">211</td>
+<td style="text-align: left;">mpir-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/mpir-feedstock" title="GitHub Repository: conda-forge/mpir-feedstock">conda-forge/mpir-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">212</td>
+<td style="text-align: left;">ninja-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/ninja-feedstock" title="GitHub Repository: conda-forge/ninja-feedstock">conda-forge/ninja-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">213</td>
+<td style="text-align: left;">nuitka-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/nuitka-feedstock" title="GitHub Repository: conda-forge/nuitka-feedstock">conda-forge/nuitka-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">214</td>
+<td style="text-align: left;">onnx-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/onnx-feedstock" title="GitHub Repository: conda-forge/onnx-feedstock">conda-forge/onnx-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">215</td>
+<td style="text-align: left;">openbabel-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/openbabel-feedstock" title="GitHub Repository: conda-forge/openbabel-feedstock">conda-forge/openbabel-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">216</td>
+<td style="text-align: left;">orange3-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/orange3-feedstock" title="GitHub Repository: conda-forge/orange3-feedstock">conda-forge/orange3-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">217</td>
+<td style="text-align: left;">orbit-ml-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/orbit-ml-feedstock" title="GitHub Repository: conda-forge/orbit-ml-feedstock">conda-forge/orbit-ml-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">218</td>
+<td style="text-align: left;">patch-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/patch-feedstock" title="GitHub Repository: conda-forge/patch-feedstock">conda-forge/patch-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">219</td>
+<td style="text-align: left;">pybind11-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pybind11-feedstock" title="GitHub Repository: conda-forge/pybind11-feedstock">conda-forge/pybind11-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">220</td>
+<td style="text-align: left;">pyferret-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pyferret-feedstock" title="GitHub Repository: conda-forge/pyferret-feedstock">conda-forge/pyferret-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">221</td>
+<td style="text-align: left;">pyopengl-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/pyopengl-feedstock" title="GitHub Repository: conda-forge/pyopengl-feedstock">conda-forge/pyopengl-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">222</td>
+<td style="text-align: left;">python-annoy-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/python-annoy-feedstock" title="GitHub Repository: conda-forge/python-annoy-feedstock">conda-forge/python-annoy-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">223</td>
+<td style="text-align: left;">python-snappy-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/python-snappy-feedstock" title="GitHub Repository: conda-forge/python-snappy-feedstock">conda-forge/python-snappy-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">224</td>
+<td style="text-align: left;">qscintilla2-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/qscintilla2-feedstock" title="GitHub Repository: conda-forge/qscintilla2-feedstock">conda-forge/qscintilla2-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">225</td>
+<td style="text-align: left;">r-sf-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/r-sf-feedstock" title="GitHub Repository: conda-forge/r-sf-feedstock">conda-forge/r-sf-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">226</td>
+<td style="text-align: left;">rever-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/rever-feedstock" title="GitHub Repository: conda-forge/rever-feedstock">conda-forge/rever-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">227</td>
+<td style="text-align: left;">rsync-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/rsync-feedstock" title="GitHub Repository: conda-forge/rsync-feedstock">conda-forge/rsync-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">228</td>
+<td style="text-align: left;">scalapack-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/scalapack-feedstock" title="GitHub Repository: conda-forge/scalapack-feedstock">conda-forge/scalapack-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">229</td>
+<td style="text-align: left;">scs-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/scs-feedstock" title="GitHub Repository: conda-forge/scs-feedstock">conda-forge/scs-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">230</td>
+<td style="text-align: left;">superset-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/superset-feedstock" title="GitHub Repository: conda-forge/superset-feedstock">conda-forge/superset-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">231</td>
+<td style="text-align: left;">vim-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/vim-feedstock" title="GitHub Repository: conda-forge/vim-feedstock">conda-forge/vim-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">232</td>
+<td style="text-align: left;">vowpalwabbit-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/vowpalwabbit-feedstock" title="GitHub Repository: conda-forge/vowpalwabbit-feedstock">conda-forge/vowpalwabbit-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">233</td>
+<td style="text-align: left;">watchdog-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/watchdog-feedstock" title="GitHub Repository: conda-forge/watchdog-feedstock">conda-forge/watchdog-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">234</td>
+<td style="text-align: left;">zstd-feedstock</td>
+<td style="text-align: left;"><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/conda-forge/zstd-feedstock" title="GitHub Repository: conda-forge/zstd-feedstock">conda-forge/zstd-feedstock</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023, Conda-Forge Warning Team
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/xmnlab" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/osl-incubator/conda-forge-warning" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.annotate", "content.tabs.link", "header.autohide", "navigation.indexes", "navigation.instant", "search.highlight", "search.share", "search.suggest"], "search": "assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>
