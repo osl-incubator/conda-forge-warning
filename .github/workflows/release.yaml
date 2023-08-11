@@ -46,11 +46,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
         run: |
-          poetry config pypi-token.pypi ${PYPI_TOKEN}
+          # poetry config pypi-token.pypi ${PYPI_TOKEN}
           makim release.ci
 
       - name: Generate documentation with changes from semantic-release
-        if: ${{ github.event_name == 'workflow_dispatch' }}
         run: makim docs.build
 
       - name: GitHub Pages action
@@ -58,4 +57,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3.5.9
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/_build/html
+          publish_dir: ./build/html
