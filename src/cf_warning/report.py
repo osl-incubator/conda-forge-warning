@@ -80,11 +80,11 @@ class CondaForgeWarning:
         index_path = Path(__file__).parent.parent.parent / "docs" / "index.md"
 
         data_segmented = self.apply_criteria(data)
-        content = ""
+        content = "# Conda-Forge Warning Panel\n\n"
 
         for level, df in data_segmented.items():
             table = df.reset_index(drop=True).to_markdown()
-            content += f"\n# {level}\n\n{table}\n"
+            content += f"\n## {level}\n\n{table}\n"
 
         with open(index_path, "w") as f:
             f.write(content)
