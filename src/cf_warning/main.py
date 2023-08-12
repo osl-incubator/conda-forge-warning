@@ -1,17 +1,12 @@
-#!/usr/bin/env python
-"""
-Read information from Github API using GraphQL GitHubAPI.
-"""
-import asyncio
-
+"""Read information from Github API using GraphQL GitHubAPI."""
 from public import public
 
 from cf_warning.report import CondaForgeWarning
-from cf_warning.cli import parse_cli
-from cf_warning.config import ArgsCLI
 
 
+@public
 def main() -> None:
+    """Generate the Conda-Forge Warning report."""
     report = CondaForgeWarning()
     report.run()
 

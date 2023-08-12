@@ -8,14 +8,6 @@ repos:
 
   - repo: local
     hooks:
-    # NOTE: This is a total unnecessary check, just used as part of the
-    #       template. Remove this after creating the template.
-    - id: check-python
-      name: check-python
-      entry: python --version
-      language: system
-      pass_filenames: no
-
     - id: black
       name: black
       entry: black
@@ -75,7 +67,7 @@ repos:
 
     - id: vulture
       name: vulture
-      entry: vulture
+      entry: vulture --min-confidence 80
       language: system
       files: "./"
       description: Find unused Python code.
