@@ -28,7 +28,8 @@ jobs:
           miniforge-variant: Mambaforge
 
       - name: create .env file
-        env: GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           envsubst < .env.tpl > .env
 
