@@ -51,15 +51,9 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "poetry build",
-        "publishCmd": "poetry publish"
+        "prepareCmd": "poetry install",
+        "publishCmd": "python -c 'import cf_warning as cfw; cfw.CondaForgeWarning().run()'"
 
-      }
-    ],
-    [
-      "@semantic-release/github",
-      {
-        "assets": ["dist/*.whl", "dist/*.tar.gz"]
       }
     ],
     [
@@ -68,6 +62,7 @@
         "assets": [
           "pyproject.toml",
           "docs/changelog.md",
+          "docs/index.md",
           "{{ cookiecutter.package_slug }}/src/__init__.py"
         ],
         "message": "chore(release): ${nextRelease.version}"
