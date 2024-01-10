@@ -61,15 +61,17 @@ class CondaForgeWarning:
     def apply_criteria(self, df: pd.DataFrame) -> dict[str, pd.DataFrame]:
         """Apply criteria to prepare the groups of data for the report."""
         criteria = {
-            "critical": (lambda data: data[data["open_prs"] >= 10]),
+            "critical": (lambda data: data[
+                (data["open_prs"] >= 10 ) & (data["days_since_last_reply"] >= 50)
+                ]),
             "danger": (
                 lambda data: data[
-                    (5 <= data["open_prs"]) & (data["open_prs"] < 10)
+                    (5 <= data["open_prs"]) & (data["open_prs"] < 10) & (data["days_since_last_reply"] > 10) & (data["days_since_last_reply"] <= 49)# 11-49
                 ]
             ),
             "warning": (
                 lambda data: data[
-                    (data["open_prs"] < 5) | (data["open_issues"] < 5)
+                    ((data["open_prs"] < 5) | (data["open_issues"] < 5)) & ((data["days_since_last_reply"] >= 5) & (data["days_since_last_reply"] <= 10))#
                 ]
             ),
         }
@@ -86,6 +88,7 @@ class CondaForgeWarning:
 
         for level, df in data_segmented.items():
             table = df.reset_index(drop=True).to_markdown()
+            print(table)
             content += f"\n## {level.upper()}\n\n{table}\n"
 
         with open(index_path, "w") as f:

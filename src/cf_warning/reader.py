@@ -13,6 +13,8 @@ from gql import Client, gql
 from gql.transport.aiohttp import AIOHTTPTransport
 from jinja2 import Template
 from public import public
+from datetime import datetime, timezone
+
 
 
 class GitHubGraphQL:
@@ -85,52 +87,90 @@ class CondaForgeGitHubSearch:
         return results
 
     async def search_all_repos_feedstock(self) -> pd.DataFrame:
-        """Search all feedstock repos."""
+        """Search all feedstock repos and add days since last reply."""
         search = """
-        query {
-            search(
-                query: "{{search_query}}",
-                type: REPOSITORY,
-                first: 100 {{after}}
-            ) {
-                pageInfo {
-                    hasNextPage
-                    endCursor
-                }
-                edges {
-                    node {
-                        ... on Repository {
-                            name
-                            url
-                            pullRequests(states: OPEN) {
-                                totalCount
-                            }
-                            issues(states: OPEN) {
-                                totalCount
-                            }
-                        }
-                    }
-                }
+        query SearchRepos {
+          search(
+            query: "org:conda-forge feedstock- in:name",
+            type: REPOSITORY,
+            first: 100{{after}}
+          ) {
+            pageInfo {
+              hasNextPage
+              endCursor
             }
+            edges {
+              node {
+                ... on Repository {
+                  name
+                  url
+                  pullRequests(states: OPEN, first: 1, orderBy: {field: UPDATED_AT, direction: DESC}) {
+                    totalCount
+                    nodes {
+                      updatedAt
+                      comments(last: 1) {
+                        nodes {
+                          updatedAt
+                        }
+                      }
+                    }
+                  }
+                  issues(states: OPEN, first: 1, orderBy: {field: UPDATED_AT, direction: DESC}) {
+                    totalCount
+                    nodes {
+                      updatedAt
+                      comments(last: 1) {
+                        nodes {
+                          updatedAt
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
         """
-
+        
         variables = {
             "search_query": "org:conda-forge feedstock- in:name",
         }
-
         results = await self.pagination(search, variables)
 
         repos = []
         for line in results:
-            repos.append(
-                {
-                    "name": line["node"]["name"],
-                    "url": line["node"]["url"],
-                    "open_prs": line["node"]["pullRequests"]["totalCount"],
-                    "open_issues": line["node"]["issues"]["totalCount"],
-                }
-            )
+            node = line["node"]
+            name = node["name"]
+            url = node["url"]
+            open_prs = node["pullRequests"]["totalCount"]
+            open_issues = node["issues"]["totalCount"]
+
+            prs_updated_at = node["pullRequests"]["nodes"][0]["updatedAt"] if node["pullRequests"]["nodes"] else None
+            issues_updated_at = node["issues"]["nodes"][0]["updatedAt"] if node["issues"]["nodes"] else None
+            
+            prs_comment_updated_at = node["pullRequests"]["nodes"][0]["comments"]["nodes"][0]["updatedAt"] if node["pullRequests"]["nodes"] and node["pullRequests"]["nodes"][0]["comments"]["nodes"] else None
+            issues_comment_updated_at = node["issues"]["nodes"][0]["comments"]["nodes"][0]["updatedAt"] if node["issues"]["nodes"] and node["issues"]["nodes"][0]["comments"]["nodes"] else None
+            
+            last_reply_dates = [date for date in [prs_updated_at, issues_updated_at, prs_comment_updated_at, issues_comment_updated_at] if date is not None]
+            last_reply_date = max(last_reply_dates, default=None)
+
+            if last_reply_date:
+                last_reply_date_parsed = datetime.strptime(last_reply_date, '%Y-%m-%dT%H:%M:%SZ')
+                last_reply_date_parsed = last_reply_date_parsed.replace(tzinfo=timezone.utc)
+                days_since_last_reply = (datetime.now(timezone.utc) - last_reply_date_parsed).days
+            else:
+                days_since_last_reply = None
+
+            repo_data = {
+                "name": name,
+                "url": url,
+                "open_prs": open_prs,
+                "open_issues": open_issues,
+                "days_since_last_reply": days_since_last_reply,
+            }
+
+            repos.append(repo_data)
 
         return pd.DataFrame(repos)
 

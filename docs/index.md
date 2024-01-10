@@ -3,288 +3,45 @@
 
 ## CRITICAL
 
-|    | name                                   | url                                                                   |   open_prs |   open_issues |
-|---:|:---------------------------------------|:----------------------------------------------------------------------|-----------:|--------------:|
-|  0 | conda-forge-pinning-feedstock          | https://github.com/conda-forge/conda-forge-pinning-feedstock          |         48 |            38 |
-|  1 | pytrilinos-feedstock                   | https://github.com/conda-forge/pytrilinos-feedstock                   |         18 |             2 |
-|  2 | conda-forge-repodata-patches-feedstock | https://github.com/conda-forge/conda-forge-repodata-patches-feedstock |         15 |            30 |
-|  3 | pytorch-cpu-feedstock                  | https://github.com/conda-forge/pytorch-cpu-feedstock                  |         14 |            18 |
-|  4 | caffe-feedstock                        | https://github.com/conda-forge/caffe-feedstock                        |         14 |             4 |
-|  5 | cyclus-feedstock                       | https://github.com/conda-forge/cyclus-feedstock                       |         13 |             2 |
-|  6 | openimageio-feedstock                  | https://github.com/conda-forge/openimageio-feedstock                  |         12 |             3 |
-|  7 | coremltools-feedstock                  | https://github.com/conda-forge/coremltools-feedstock                  |         11 |             1 |
-|  8 | python-feedstock                       | https://github.com/conda-forge/python-feedstock                       |         10 |            34 |
-|  9 | trilinos-feedstock                     | https://github.com/conda-forge/trilinos-feedstock                     |         10 |             4 |
-| 10 | ocaml-feedstock                        | https://github.com/conda-forge/ocaml-feedstock                        |         10 |             2 |
+|    | name                  | url                                                  |   open_prs |   open_issues |   days_since_last_reply |
+|---:|:----------------------|:-----------------------------------------------------|-----------:|--------------:|------------------------:|
+|  0 | caffe-feedstock       | https://github.com/conda-forge/caffe-feedstock       |         14 |             4 |                     638 |
+|  1 | coremltools-feedstock | https://github.com/conda-forge/coremltools-feedstock |         12 |             1 |                      96 |
 
 ## DANGER
 
-|    | name                           | url                                                           |   open_prs |   open_issues |
-|---:|:-------------------------------|:--------------------------------------------------------------|-----------:|--------------:|
-|  0 | ghc-feedstock                  | https://github.com/conda-forge/ghc-feedstock                  |          9 |             2 |
-|  1 | conda-standalone-feedstock     | https://github.com/conda-forge/conda-standalone-feedstock     |          9 |             1 |
-|  2 | blas-feedstock                 | https://github.com/conda-forge/blas-feedstock                 |          8 |             8 |
-|  3 | conda-forge-ci-setup-feedstock | https://github.com/conda-forge/conda-forge-ci-setup-feedstock |          8 |             8 |
-|  4 | ray-packages-feedstock         | https://github.com/conda-forge/ray-packages-feedstock         |          8 |             7 |
-|  5 | conda-verify-feedstock         | https://github.com/conda-forge/conda-verify-feedstock         |          8 |             1 |
-|  6 | tensorflow-feedstock           | https://github.com/conda-forge/tensorflow-feedstock           |          7 |            26 |
-|  7 | julia-feedstock                | https://github.com/conda-forge/julia-feedstock                |          7 |             8 |
-|  8 | mumps-feedstock                | https://github.com/conda-forge/mumps-feedstock                |          7 |             4 |
-|  9 | nodejs-feedstock               | https://github.com/conda-forge/nodejs-feedstock               |          7 |             2 |
-| 10 | pyqt-feedstock                 | https://github.com/conda-forge/pyqt-feedstock                 |          6 |            11 |
-| 11 | emacs-feedstock                | https://github.com/conda-forge/emacs-feedstock                |          6 |             9 |
-| 12 | arrow-cpp-feedstock            | https://github.com/conda-forge/arrow-cpp-feedstock            |          6 |             4 |
-| 13 | faiss-split-feedstock          | https://github.com/conda-forge/faiss-split-feedstock          |          6 |             4 |
-| 14 | ruby-feedstock                 | https://github.com/conda-forge/ruby-feedstock                 |          6 |             4 |
-| 15 | geant4-feedstock               | https://github.com/conda-forge/geant4-feedstock               |          6 |             2 |
-| 16 | r-base-feedstock               | https://github.com/conda-forge/r-base-feedstock               |          5 |            18 |
-| 17 | cudatoolkit-dev-feedstock      | https://github.com/conda-forge/cudatoolkit-dev-feedstock      |          5 |            16 |
-| 18 | rdkit-feedstock                | https://github.com/conda-forge/rdkit-feedstock                |          5 |            11 |
-| 19 | cmake-feedstock                | https://github.com/conda-forge/cmake-feedstock                |          5 |             4 |
-| 20 | gdb-feedstock                  | https://github.com/conda-forge/gdb-feedstock                  |          5 |             4 |
-| 21 | fenics-feedstock               | https://github.com/conda-forge/fenics-feedstock               |          5 |             3 |
-| 22 | openblas-feedstock             | https://github.com/conda-forge/openblas-feedstock             |          5 |             2 |
-| 23 | pynio-feedstock                | https://github.com/conda-forge/pynio-feedstock                |          5 |             2 |
-| 24 | suitesparse-feedstock          | https://github.com/conda-forge/suitesparse-feedstock          |          5 |             2 |
-| 25 | make-feedstock                 | https://github.com/conda-forge/make-feedstock                 |          5 |             1 |
+|    | name                      | url                                                      |   open_prs |   open_issues |   days_since_last_reply |
+|---:|:--------------------------|:---------------------------------------------------------|-----------:|--------------:|------------------------:|
+|  0 | julia-feedstock           | https://github.com/conda-forge/julia-feedstock           |          8 |            10 |                      14 |
+|  1 | ghc-feedstock             | https://github.com/conda-forge/ghc-feedstock             |          8 |             2 |                      13 |
+|  2 | ruby-feedstock            | https://github.com/conda-forge/ruby-feedstock            |          7 |             4 |                      16 |
+|  3 | arrow-cpp-feedstock       | https://github.com/conda-forge/arrow-cpp-feedstock       |          6 |             4 |                      36 |
+|  4 | xz-feedstock              | https://github.com/conda-forge/xz-feedstock              |          6 |             3 |                      31 |
+|  5 | rstudio-feedstock         | https://github.com/conda-forge/rstudio-feedstock         |          6 |             2 |                      22 |
+|  6 | sagemaker-feedstock       | https://github.com/conda-forge/sagemaker-feedstock       |          6 |             2 |                      21 |
+|  7 | cudatoolkit-dev-feedstock | https://github.com/conda-forge/cudatoolkit-dev-feedstock |          5 |            18 |                      47 |
+|  8 | libcxx-feedstock          | https://github.com/conda-forge/libcxx-feedstock          |          5 |             4 |                      48 |
+|  9 | bazel-feedstock           | https://github.com/conda-forge/bazel-feedstock           |          5 |             2 |                      29 |
+| 10 | pyside2-feedstock         | https://github.com/conda-forge/pyside2-feedstock         |          5 |             1 |                      14 |
 
 ## WARNING
 
-|     | name                                | url                                                                |   open_prs |   open_issues |
-|----:|:------------------------------------|:-------------------------------------------------------------------|-----------:|--------------:|
-|   0 | pytrilinos-feedstock                | https://github.com/conda-forge/pytrilinos-feedstock                |         18 |             2 |
-|   1 | caffe-feedstock                     | https://github.com/conda-forge/caffe-feedstock                     |         14 |             4 |
-|   2 | cyclus-feedstock                    | https://github.com/conda-forge/cyclus-feedstock                    |         13 |             2 |
-|   3 | openimageio-feedstock               | https://github.com/conda-forge/openimageio-feedstock               |         12 |             3 |
-|   4 | coremltools-feedstock               | https://github.com/conda-forge/coremltools-feedstock               |         11 |             1 |
-|   5 | trilinos-feedstock                  | https://github.com/conda-forge/trilinos-feedstock                  |         10 |             4 |
-|   6 | ocaml-feedstock                     | https://github.com/conda-forge/ocaml-feedstock                     |         10 |             2 |
-|   7 | ghc-feedstock                       | https://github.com/conda-forge/ghc-feedstock                       |          9 |             2 |
-|   8 | conda-standalone-feedstock          | https://github.com/conda-forge/conda-standalone-feedstock          |          9 |             1 |
-|   9 | conda-verify-feedstock              | https://github.com/conda-forge/conda-verify-feedstock              |          8 |             1 |
-|  10 | mumps-feedstock                     | https://github.com/conda-forge/mumps-feedstock                     |          7 |             4 |
-|  11 | nodejs-feedstock                    | https://github.com/conda-forge/nodejs-feedstock                    |          7 |             2 |
-|  12 | arrow-cpp-feedstock                 | https://github.com/conda-forge/arrow-cpp-feedstock                 |          6 |             4 |
-|  13 | faiss-split-feedstock               | https://github.com/conda-forge/faiss-split-feedstock               |          6 |             4 |
-|  14 | ruby-feedstock                      | https://github.com/conda-forge/ruby-feedstock                      |          6 |             4 |
-|  15 | geant4-feedstock                    | https://github.com/conda-forge/geant4-feedstock                    |          6 |             2 |
-|  16 | cmake-feedstock                     | https://github.com/conda-forge/cmake-feedstock                     |          5 |             4 |
-|  17 | gdb-feedstock                       | https://github.com/conda-forge/gdb-feedstock                       |          5 |             4 |
-|  18 | fenics-feedstock                    | https://github.com/conda-forge/fenics-feedstock                    |          5 |             3 |
-|  19 | openblas-feedstock                  | https://github.com/conda-forge/openblas-feedstock                  |          5 |             2 |
-|  20 | pynio-feedstock                     | https://github.com/conda-forge/pynio-feedstock                     |          5 |             2 |
-|  21 | suitesparse-feedstock               | https://github.com/conda-forge/suitesparse-feedstock               |          5 |             2 |
-|  22 | make-feedstock                      | https://github.com/conda-forge/make-feedstock                      |          5 |             1 |
-|  23 | opencv-feedstock                    | https://github.com/conda-forge/opencv-feedstock                    |          4 |            23 |
-|  24 | clangdev-feedstock                  | https://github.com/conda-forge/clangdev-feedstock                  |          4 |            13 |
-|  25 | openmm-feedstock                    | https://github.com/conda-forge/openmm-feedstock                    |          4 |            11 |
-|  26 | qt-main-feedstock                   | https://github.com/conda-forge/qt-main-feedstock                   |          4 |            10 |
-|  27 | tk-feedstock                        | https://github.com/conda-forge/tk-feedstock                        |          4 |            10 |
-|  28 | llvmdev-feedstock                   | https://github.com/conda-forge/llvmdev-feedstock                   |          4 |             9 |
-|  29 | freetype-feedstock                  | https://github.com/conda-forge/freetype-feedstock                  |          4 |             5 |
-|  30 | fbprophet-feedstock                 | https://github.com/conda-forge/fbprophet-feedstock                 |          4 |             3 |
-|  31 | isce2-feedstock                     | https://github.com/conda-forge/isce2-feedstock                     |          4 |             3 |
-|  32 | libarchive-feedstock                | https://github.com/conda-forge/libarchive-feedstock                |          4 |             3 |
-|  33 | re2-feedstock                       | https://github.com/conda-forge/re2-feedstock                       |          4 |             3 |
-|  34 | xz-feedstock                        | https://github.com/conda-forge/xz-feedstock                        |          4 |             3 |
-|  35 | dask-feedstock                      | https://github.com/conda-forge/dask-feedstock                      |          4 |             2 |
-|  36 | gnuradio-feedstock                  | https://github.com/conda-forge/gnuradio-feedstock                  |          4 |             2 |
-|  37 | ruamel_yaml-feedstock               | https://github.com/conda-forge/ruamel_yaml-feedstock               |          4 |             2 |
-|  38 | gym-feedstock                       | https://github.com/conda-forge/gym-feedstock                       |          4 |             1 |
-|  39 | mono-feedstock                      | https://github.com/conda-forge/mono-feedstock                      |          4 |             1 |
-|  40 | python-primesieve-feedstock         | https://github.com/conda-forge/python-primesieve-feedstock         |          4 |             1 |
-|  41 | toolchain-feedstock                 | https://github.com/conda-forge/toolchain-feedstock                 |          3 |            11 |
-|  42 | boost-cpp-feedstock                 | https://github.com/conda-forge/boost-cpp-feedstock                 |          3 |             9 |
-|  43 | octave-feedstock                    | https://github.com/conda-forge/octave-feedstock                    |          3 |             8 |
-|  44 | boost-feedstock                     | https://github.com/conda-forge/boost-feedstock                     |          3 |             6 |
-|  45 | neuron-feedstock                    | https://github.com/conda-forge/neuron-feedstock                    |          3 |             5 |
-|  46 | scipy-feedstock                     | https://github.com/conda-forge/scipy-feedstock                     |          3 |             5 |
-|  47 | clang-compiler-activation-feedstock | https://github.com/conda-forge/clang-compiler-activation-feedstock |          3 |             4 |
-|  48 | metis-feedstock                     | https://github.com/conda-forge/metis-feedstock                     |          3 |             4 |
-|  49 | conda-feedstock                     | https://github.com/conda-forge/conda-feedstock                     |          3 |             3 |
-|  50 | numpy-feedstock                     | https://github.com/conda-forge/numpy-feedstock                     |          3 |             3 |
-|  51 | google-cloud-cpp-feedstock          | https://github.com/conda-forge/google-cloud-cpp-feedstock          |          3 |             2 |
-|  52 | hdf4-feedstock                      | https://github.com/conda-forge/hdf4-feedstock                      |          3 |             2 |
-|  53 | jupyter_core-feedstock              | https://github.com/conda-forge/jupyter_core-feedstock              |          3 |             2 |
-|  54 | libnetcdf-feedstock                 | https://github.com/conda-forge/libnetcdf-feedstock                 |          3 |             2 |
-|  55 | lief-feedstock                      | https://github.com/conda-forge/lief-feedstock                      |          3 |             2 |
-|  56 | mdanalysis-feedstock                | https://github.com/conda-forge/mdanalysis-feedstock                |          3 |             2 |
-|  57 | mypy-feedstock                      | https://github.com/conda-forge/mypy-feedstock                      |          3 |             2 |
-|  58 | ncurses-feedstock                   | https://github.com/conda-forge/ncurses-feedstock                   |          3 |             2 |
-|  59 | numba-feedstock                     | https://github.com/conda-forge/numba-feedstock                     |          3 |             2 |
-|  60 | ompl-feedstock                      | https://github.com/conda-forge/ompl-feedstock                      |          3 |             2 |
-|  61 | onnxruntime-feedstock               | https://github.com/conda-forge/onnxruntime-feedstock               |          3 |             2 |
-|  62 | theano-feedstock                    | https://github.com/conda-forge/theano-feedstock                    |          3 |             2 |
-|  63 | configurable-http-proxy-feedstock   | https://github.com/conda-forge/configurable-http-proxy-feedstock   |          3 |             1 |
-|  64 | flytekit-feedstock                  | https://github.com/conda-forge/flytekit-feedstock                  |          3 |             1 |
-|  65 | mpfr-feedstock                      | https://github.com/conda-forge/mpfr-feedstock                      |          3 |             1 |
-|  66 | openmc-feedstock                    | https://github.com/conda-forge/openmc-feedstock                    |          3 |             1 |
-|  67 | openscenegraph-feedstock            | https://github.com/conda-forge/openscenegraph-feedstock            |          3 |             1 |
-|  68 | pandoc-feedstock                    | https://github.com/conda-forge/pandoc-feedstock                    |          3 |             1 |
-|  69 | prefect-feedstock                   | https://github.com/conda-forge/prefect-feedstock                   |          3 |             1 |
-|  70 | pycrypto-feedstock                  | https://github.com/conda-forge/pycrypto-feedstock                  |          3 |             1 |
-|  71 | pystan-feedstock                    | https://github.com/conda-forge/pystan-feedstock                    |          3 |             1 |
-|  72 | sdl2-feedstock                      | https://github.com/conda-forge/sdl2-feedstock                      |          3 |             1 |
-|  73 | vtk-feedstock                       | https://github.com/conda-forge/vtk-feedstock                       |          2 |            17 |
-|  74 | root-feedstock                      | https://github.com/conda-forge/root-feedstock                      |          2 |            16 |
-|  75 | hdf5-feedstock                      | https://github.com/conda-forge/hdf5-feedstock                      |          2 |            14 |
-|  76 | ctng-compilers-feedstock            | https://github.com/conda-forge/ctng-compilers-feedstock            |          2 |            12 |
-|  77 | openjdk-feedstock                   | https://github.com/conda-forge/openjdk-feedstock                   |          2 |             9 |
-|  78 | h5py-feedstock                      | https://github.com/conda-forge/h5py-feedstock                      |          2 |             6 |
-|  79 | python-spams-feedstock              | https://github.com/conda-forge/python-spams-feedstock              |          2 |             6 |
-|  80 | cupy-feedstock                      | https://github.com/conda-forge/cupy-feedstock                      |          2 |             5 |
-|  81 | jupyter-feedstock                   | https://github.com/conda-forge/jupyter-feedstock                   |          2 |             5 |
-|  82 | pypy3.6-feedstock                   | https://github.com/conda-forge/pypy3.6-feedstock                   |          2 |             5 |
-|  83 | rpy2-feedstock                      | https://github.com/conda-forge/rpy2-feedstock                      |          2 |             5 |
-|  84 | scipoptsuite-feedstock              | https://github.com/conda-forge/scipoptsuite-feedstock              |          2 |             5 |
-|  85 | dbus-feedstock                      | https://github.com/conda-forge/dbus-feedstock                      |          2 |             4 |
-|  86 | torchvision-feedstock               | https://github.com/conda-forge/torchvision-feedstock               |          2 |             4 |
-|  87 | cppcheck-feedstock                  | https://github.com/conda-forge/cppcheck-feedstock                  |          2 |             3 |
-|  88 | distributed-feedstock               | https://github.com/conda-forge/distributed-feedstock               |          2 |             3 |
-|  89 | grpc-cpp-feedstock                  | https://github.com/conda-forge/grpc-cpp-feedstock                  |          2 |             3 |
-|  90 | kaldi-feedstock                     | https://github.com/conda-forge/kaldi-feedstock                     |          2 |             3 |
-|  91 | autoconf-feedstock                  | https://github.com/conda-forge/autoconf-feedstock                  |          2 |             2 |
-|  92 | bazel-feedstock                     | https://github.com/conda-forge/bazel-feedstock                     |          2 |             2 |
-|  93 | cling-feedstock                     | https://github.com/conda-forge/cling-feedstock                     |          2 |             2 |
-|  94 | jaxlib-feedstock                    | https://github.com/conda-forge/jaxlib-feedstock                    |          2 |             2 |
-|  95 | jemalloc-feedstock                  | https://github.com/conda-forge/jemalloc-feedstock                  |          2 |             2 |
-|  96 | pandas-datareader-feedstock         | https://github.com/conda-forge/pandas-datareader-feedstock         |          2 |             2 |
-|  97 | pandas-feedstock                    | https://github.com/conda-forge/pandas-feedstock                    |          2 |             2 |
-|  98 | pandas-profiling-feedstock          | https://github.com/conda-forge/pandas-profiling-feedstock          |          2 |             2 |
-|  99 | pocl-feedstock                      | https://github.com/conda-forge/pocl-feedstock                      |          2 |             2 |
-| 100 | pyfai-feedstock                     | https://github.com/conda-forge/pyfai-feedstock                     |          2 |             2 |
-| 101 | sed-feedstock                       | https://github.com/conda-forge/sed-feedstock                       |          2 |             2 |
-| 102 | uwsgi-feedstock                     | https://github.com/conda-forge/uwsgi-feedstock                     |          2 |             2 |
-| 103 | awscli-feedstock                    | https://github.com/conda-forge/awscli-feedstock                    |          2 |             1 |
-| 104 | basemap-feedstock                   | https://github.com/conda-forge/basemap-feedstock                   |          2 |             1 |
-| 105 | capnproto-feedstock                 | https://github.com/conda-forge/capnproto-feedstock                 |          2 |             1 |
-| 106 | freeglut-feedstock                  | https://github.com/conda-forge/freeglut-feedstock                  |          2 |             1 |
-| 107 | gfortran_osx-64-feedstock           | https://github.com/conda-forge/gfortran_osx-64-feedstock           |          2 |             1 |
-| 108 | grpcio-feedstock                    | https://github.com/conda-forge/grpcio-feedstock                    |          2 |             1 |
-| 109 | jq-feedstock                        | https://github.com/conda-forge/jq-feedstock                        |          2 |             1 |
-| 110 | krb5-feedstock                      | https://github.com/conda-forge/krb5-feedstock                      |          2 |             1 |
-| 111 | kubernetes-helm-feedstock           | https://github.com/conda-forge/kubernetes-helm-feedstock           |          2 |             1 |
-| 112 | libgfortran-feedstock               | https://github.com/conda-forge/libgfortran-feedstock               |          2 |             1 |
-| 113 | micromamba-feedstock                | https://github.com/conda-forge/micromamba-feedstock                |          2 |             1 |
-| 114 | mysql-connector-python-feedstock    | https://github.com/conda-forge/mysql-connector-python-feedstock    |          2 |             1 |
-| 115 | netcdf4-feedstock                   | https://github.com/conda-forge/netcdf4-feedstock                   |          2 |             1 |
-| 116 | nginx-feedstock                     | https://github.com/conda-forge/nginx-feedstock                     |          2 |             1 |
-| 117 | nlopt-feedstock                     | https://github.com/conda-forge/nlopt-feedstock                     |          2 |             1 |
-| 118 | pixman-feedstock                    | https://github.com/conda-forge/pixman-feedstock                    |          2 |             1 |
-| 119 | popt-feedstock                      | https://github.com/conda-forge/popt-feedstock                      |          2 |             1 |
-| 120 | postgresql-feedstock                | https://github.com/conda-forge/postgresql-feedstock                |          2 |             1 |
-| 121 | python-confluent-kafka-feedstock    | https://github.com/conda-forge/python-confluent-kafka-feedstock    |          2 |             1 |
-| 122 | qwtpolar-feedstock                  | https://github.com/conda-forge/qwtpolar-feedstock                  |          2 |             1 |
-| 123 | rubinenv-feedstock                  | https://github.com/conda-forge/rubinenv-feedstock                  |          2 |             1 |
-| 124 | sagemaker-feedstock                 | https://github.com/conda-forge/sagemaker-feedstock                 |          2 |             1 |
-| 125 | zfpy-feedstock                      | https://github.com/conda-forge/zfpy-feedstock                      |          2 |             1 |
-| 126 | zlib-feedstock                      | https://github.com/conda-forge/zlib-feedstock                      |          2 |             1 |
-| 127 | git-feedstock                       | https://github.com/conda-forge/git-feedstock                       |          1 |            12 |
-| 128 | qt-feedstock                        | https://github.com/conda-forge/qt-feedstock                        |          1 |            11 |
-| 129 | ctng-compiler-activation-feedstock  | https://github.com/conda-forge/ctng-compiler-activation-feedstock  |          1 |             9 |
-| 130 | nvcc-feedstock                      | https://github.com/conda-forge/nvcc-feedstock                      |          1 |             9 |
-| 131 | cudatoolkit-feedstock               | https://github.com/conda-forge/cudatoolkit-feedstock               |          1 |             7 |
-| 132 | fftw-feedstock                      | https://github.com/conda-forge/fftw-feedstock                      |          1 |             7 |
-| 133 | gstreamer-feedstock                 | https://github.com/conda-forge/gstreamer-feedstock                 |          1 |             7 |
-| 134 | xgboost-feedstock                   | https://github.com/conda-forge/xgboost-feedstock                   |          1 |             7 |
-| 135 | gdcm-feedstock                      | https://github.com/conda-forge/gdcm-feedstock                      |          1 |             6 |
-| 136 | sagelib-feedstock                   | https://github.com/conda-forge/sagelib-feedstock                   |          1 |             6 |
-| 137 | texlive-core-feedstock              | https://github.com/conda-forge/texlive-core-feedstock              |          1 |             6 |
-| 138 | pyfftw-feedstock                    | https://github.com/conda-forge/pyfftw-feedstock                    |          1 |             5 |
-| 139 | qe-feedstock                        | https://github.com/conda-forge/qe-feedstock                        |          1 |             5 |
-| 140 | simbody-feedstock                   | https://github.com/conda-forge/simbody-feedstock                   |          1 |             5 |
-| 141 | coincbc-feedstock                   | https://github.com/conda-forge/coincbc-feedstock                   |          1 |             4 |
-| 142 | graph-tool-feedstock                | https://github.com/conda-forge/graph-tool-feedstock                |          1 |             4 |
-| 143 | openssl-feedstock                   | https://github.com/conda-forge/openssl-feedstock                   |          1 |             4 |
-| 144 | rust-feedstock                      | https://github.com/conda-forge/rust-feedstock                      |          1 |             4 |
-| 145 | stir-feedstock                      | https://github.com/conda-forge/stir-feedstock                      |          1 |             4 |
-| 146 | wxpython-feedstock                  | https://github.com/conda-forge/wxpython-feedstock                  |          1 |             4 |
-| 147 | ambertools-feedstock                | https://github.com/conda-forge/ambertools-feedstock                |          1 |             3 |
-| 148 | binutils-feedstock                  | https://github.com/conda-forge/binutils-feedstock                  |          1 |             3 |
-| 149 | curl-feedstock                      | https://github.com/conda-forge/curl-feedstock                      |          1 |             3 |
-| 150 | eccodes-feedstock                   | https://github.com/conda-forge/eccodes-feedstock                   |          1 |             3 |
-| 151 | fiona-feedstock                     | https://github.com/conda-forge/fiona-feedstock                     |          1 |             3 |
-| 152 | glpk-feedstock                      | https://github.com/conda-forge/glpk-feedstock                      |          1 |             3 |
-| 153 | itk-feedstock                       | https://github.com/conda-forge/itk-feedstock                       |          1 |             3 |
-| 154 | openmpi-feedstock                   | https://github.com/conda-forge/openmpi-feedstock                   |          1 |             3 |
-| 155 | pyembree-feedstock                  | https://github.com/conda-forge/pyembree-feedstock                  |          1 |             3 |
-| 156 | pymc3-feedstock                     | https://github.com/conda-forge/pymc3-feedstock                     |          1 |             3 |
-| 157 | pythran-feedstock                   | https://github.com/conda-forge/pythran-feedstock                   |          1 |             3 |
-| 158 | pytorch_sparse-feedstock            | https://github.com/conda-forge/pytorch_sparse-feedstock            |          1 |             3 |
-| 159 | qgis-feedstock                      | https://github.com/conda-forge/qgis-feedstock                      |          1 |             3 |
-| 160 | ruamel.yaml-feedstock               | https://github.com/conda-forge/ruamel.yaml-feedstock               |          1 |             3 |
-| 161 | vc-feedstock                        | https://github.com/conda-forge/vc-feedstock                        |          1 |             3 |
-| 162 | wgrib2-feedstock                    | https://github.com/conda-forge/wgrib2-feedstock                    |          1 |             3 |
-| 163 | armadillo-feedstock                 | https://github.com/conda-forge/armadillo-feedstock                 |          1 |             2 |
-| 164 | bullet-feedstock                    | https://github.com/conda-forge/bullet-feedstock                    |          1 |             2 |
-| 165 | django-feedstock                    | https://github.com/conda-forge/django-feedstock                    |          1 |             2 |
-| 166 | dlib-feedstock                      | https://github.com/conda-forge/dlib-feedstock                      |          1 |             2 |
-| 167 | esmpy-feedstock                     | https://github.com/conda-forge/esmpy-feedstock                     |          1 |             2 |
-| 168 | gsl-feedstock                       | https://github.com/conda-forge/gsl-feedstock                       |          1 |             2 |
-| 169 | inkscape-feedstock                  | https://github.com/conda-forge/inkscape-feedstock                  |          1 |             2 |
-| 170 | kornia-feedstock                    | https://github.com/conda-forge/kornia-feedstock                    |          1 |             2 |
-| 171 | kubernetes-feedstock                | https://github.com/conda-forge/kubernetes-feedstock                |          1 |             2 |
-| 172 | libcxx-feedstock                    | https://github.com/conda-forge/libcxx-feedstock                    |          1 |             2 |
-| 173 | libgit2-feedstock                   | https://github.com/conda-forge/libgit2-feedstock                   |          1 |             2 |
-| 174 | libpng-feedstock                    | https://github.com/conda-forge/libpng-feedstock                    |          1 |             2 |
-| 175 | libxml2-feedstock                   | https://github.com/conda-forge/libxml2-feedstock                   |          1 |             2 |
-| 176 | libzip-feedstock                    | https://github.com/conda-forge/libzip-feedstock                    |          1 |             2 |
-| 177 | mesalib-feedstock                   | https://github.com/conda-forge/mesalib-feedstock                   |          1 |             2 |
-| 178 | numexpr-feedstock                   | https://github.com/conda-forge/numexpr-feedstock                   |          1 |             2 |
-| 179 | pyspark-feedstock                   | https://github.com/conda-forge/pyspark-feedstock                   |          1 |             2 |
-| 180 | python.app-feedstock                | https://github.com/conda-forge/python.app-feedstock                |          1 |             2 |
-| 181 | streamlit-feedstock                 | https://github.com/conda-forge/streamlit-feedstock                 |          1 |             2 |
-| 182 | vega-cli-feedstock                  | https://github.com/conda-forge/vega-cli-feedstock                  |          1 |             2 |
-| 183 | zeromq-feedstock                    | https://github.com/conda-forge/zeromq-feedstock                    |          1 |             2 |
-| 184 | auditwheel-feedstock                | https://github.com/conda-forge/auditwheel-feedstock                |          1 |             1 |
-| 185 | av-feedstock                        | https://github.com/conda-forge/av-feedstock                        |          1 |             1 |
-| 186 | bqplot-feedstock                    | https://github.com/conda-forge/bqplot-feedstock                    |          1 |             1 |
-| 187 | cairosvg-feedstock                  | https://github.com/conda-forge/cairosvg-feedstock                  |          1 |             1 |
-| 188 | catboost-feedstock                  | https://github.com/conda-forge/catboost-feedstock                  |          1 |             1 |
-| 189 | ccache-feedstock                    | https://github.com/conda-forge/ccache-feedstock                    |          1 |             1 |
-| 190 | conda-build-feedstock               | https://github.com/conda-forge/conda-build-feedstock               |          1 |             1 |
-| 191 | conda-smithy-feedstock              | https://github.com/conda-forge/conda-smithy-feedstock              |          1 |             1 |
-| 192 | cross-python-feedstock              | https://github.com/conda-forge/cross-python-feedstock              |          1 |             1 |
-| 193 | gflags-feedstock                    | https://github.com/conda-forge/gflags-feedstock                    |          1 |             1 |
-| 194 | gmt-feedstock                       | https://github.com/conda-forge/gmt-feedstock                       |          1 |             1 |
-| 195 | go-feedstock                        | https://github.com/conda-forge/go-feedstock                        |          1 |             1 |
-| 196 | great-expectations-feedstock        | https://github.com/conda-forge/great-expectations-feedstock        |          1 |             1 |
-| 197 | gymnasium-feedstock                 | https://github.com/conda-forge/gymnasium-feedstock                 |          1 |             1 |
-| 198 | idyntree-feedstock                  | https://github.com/conda-forge/idyntree-feedstock                  |          1 |             1 |
-| 199 | jsonnet-feedstock                   | https://github.com/conda-forge/jsonnet-feedstock                   |          1 |             1 |
-| 200 | kivy-feedstock                      | https://github.com/conda-forge/kivy-feedstock                      |          1 |             1 |
-| 201 | kiwisolver-feedstock                | https://github.com/conda-forge/kiwisolver-feedstock                |          1 |             1 |
-| 202 | lapack-feedstock                    | https://github.com/conda-forge/lapack-feedstock                    |          1 |             1 |
-| 203 | lemon-feedstock                     | https://github.com/conda-forge/lemon-feedstock                     |          1 |             1 |
-| 204 | libsolv-feedstock                   | https://github.com/conda-forge/libsolv-feedstock                   |          1 |             1 |
-| 205 | line_profiler-feedstock             | https://github.com/conda-forge/line_profiler-feedstock             |          1 |             1 |
-| 206 | llvmlite-feedstock                  | https://github.com/conda-forge/llvmlite-feedstock                  |          1 |             1 |
-| 207 | mamba-feedstock                     | https://github.com/conda-forge/mamba-feedstock                     |          1 |             1 |
-| 208 | matplotlib-feedstock                | https://github.com/conda-forge/matplotlib-feedstock                |          1 |             1 |
-| 209 | mdtraj-feedstock                    | https://github.com/conda-forge/mdtraj-feedstock                    |          1 |             1 |
-| 210 | mlflow-feedstock                    | https://github.com/conda-forge/mlflow-feedstock                    |          1 |             1 |
-| 211 | mpir-feedstock                      | https://github.com/conda-forge/mpir-feedstock                      |          1 |             1 |
-| 212 | ninja-feedstock                     | https://github.com/conda-forge/ninja-feedstock                     |          1 |             1 |
-| 213 | nuitka-feedstock                    | https://github.com/conda-forge/nuitka-feedstock                    |          1 |             1 |
-| 214 | onnx-feedstock                      | https://github.com/conda-forge/onnx-feedstock                      |          1 |             1 |
-| 215 | openbabel-feedstock                 | https://github.com/conda-forge/openbabel-feedstock                 |          1 |             1 |
-| 216 | orange3-feedstock                   | https://github.com/conda-forge/orange3-feedstock                   |          1 |             1 |
-| 217 | orbit-ml-feedstock                  | https://github.com/conda-forge/orbit-ml-feedstock                  |          1 |             1 |
-| 218 | pango-feedstock                     | https://github.com/conda-forge/pango-feedstock                     |          1 |             1 |
-| 219 | patch-feedstock                     | https://github.com/conda-forge/patch-feedstock                     |          1 |             1 |
-| 220 | pybind11-feedstock                  | https://github.com/conda-forge/pybind11-feedstock                  |          1 |             1 |
-| 221 | pyferret-feedstock                  | https://github.com/conda-forge/pyferret-feedstock                  |          1 |             1 |
-| 222 | pyopengl-feedstock                  | https://github.com/conda-forge/pyopengl-feedstock                  |          1 |             1 |
-| 223 | python-annoy-feedstock              | https://github.com/conda-forge/python-annoy-feedstock              |          1 |             1 |
-| 224 | python-snappy-feedstock             | https://github.com/conda-forge/python-snappy-feedstock             |          1 |             1 |
-| 225 | qscintilla2-feedstock               | https://github.com/conda-forge/qscintilla2-feedstock               |          1 |             1 |
-| 226 | r-sf-feedstock                      | https://github.com/conda-forge/r-sf-feedstock                      |          1 |             1 |
-| 227 | rever-feedstock                     | https://github.com/conda-forge/rever-feedstock                     |          1 |             1 |
-| 228 | rsync-feedstock                     | https://github.com/conda-forge/rsync-feedstock                     |          1 |             1 |
-| 229 | scalapack-feedstock                 | https://github.com/conda-forge/scalapack-feedstock                 |          1 |             1 |
-| 230 | scs-feedstock                       | https://github.com/conda-forge/scs-feedstock                       |          1 |             1 |
-| 231 | superset-feedstock                  | https://github.com/conda-forge/superset-feedstock                  |          1 |             1 |
-| 232 | vim-feedstock                       | https://github.com/conda-forge/vim-feedstock                       |          1 |             1 |
-| 233 | vowpalwabbit-feedstock              | https://github.com/conda-forge/vowpalwabbit-feedstock              |          1 |             1 |
-| 234 | watchdog-feedstock                  | https://github.com/conda-forge/watchdog-feedstock                  |          1 |             1 |
-| 235 | zstd-feedstock                      | https://github.com/conda-forge/zstd-feedstock                      |          1 |             1 |
+|    | name                      | url                                                      |   open_prs |   open_issues |   days_since_last_reply |
+|---:|:--------------------------|:---------------------------------------------------------|-----------:|--------------:|------------------------:|
+|  0 | pytrilinos-feedstock      | https://github.com/conda-forge/pytrilinos-feedstock      |         22 |             2 |                       5 |
+|  1 | trilinos-feedstock        | https://github.com/conda-forge/trilinos-feedstock        |         13 |             4 |                       5 |
+|  2 | openblas-feedstock        | https://github.com/conda-forge/openblas-feedstock        |          6 |             2 |                       7 |
+|  3 | vtk-feedstock             | https://github.com/conda-forge/vtk-feedstock             |          4 |             9 |                      10 |
+|  4 | openimageio-feedstock     | https://github.com/conda-forge/openimageio-feedstock     |          4 |             3 |                       8 |
+|  5 | freecad-feedstock         | https://github.com/conda-forge/freecad-feedstock         |          4 |             1 |                       7 |
+|  6 | pyfftw-feedstock          | https://github.com/conda-forge/pyfftw-feedstock          |          3 |             5 |                       7 |
+|  7 | pypy3.6-feedstock         | https://github.com/conda-forge/pypy3.6-feedstock         |          3 |             4 |                       8 |
+|  8 | qgis-feedstock            | https://github.com/conda-forge/qgis-feedstock            |          2 |             7 |                       6 |
+|  9 | rubinenv-feedstock        | https://github.com/conda-forge/rubinenv-feedstock        |          2 |             2 |                       6 |
+| 10 | leptonica-feedstock       | https://github.com/conda-forge/leptonica-feedstock       |          2 |             1 |                       6 |
+| 11 | llvmlite-feedstock        | https://github.com/conda-forge/llvmlite-feedstock        |          2 |             1 |                       5 |
+| 12 | sdl2_image-feedstock      | https://github.com/conda-forge/sdl2_image-feedstock      |          2 |             1 |                       8 |
+| 13 | jupyterlab-feedstock      | https://github.com/conda-forge/jupyterlab-feedstock      |          1 |             4 |                       9 |
+| 14 | pythran-feedstock         | https://github.com/conda-forge/pythran-feedstock         |          1 |             3 |                       6 |
+| 15 | rust-activation-feedstock | https://github.com/conda-forge/rust-activation-feedstock |          1 |             1 |                       6 |
+| 16 | spglib-feedstock          | https://github.com/conda-forge/spglib-feedstock          |          1 |             1 |                       5 |
