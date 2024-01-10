@@ -70,38 +70,69 @@ Ready to contribute? Here’s how to set up `conda-forge-warning` for local deve
 
 1.  Fork the `conda-forge-warning` repo on GitHub.
 
-2.  Clone your fork locally::
+2.  Clone your fork locally:
 
+    ```
     $ git clone git@github.com:your_name_here/conda-forge-warning.git
+    ```
 
-3.  Install your local copy into a virtualenv. Assuming you have
-    virtualenvwrapper installed, this is how you set up your fork for
-    local development::
+3. Make sure you got installed Miniforge
 
-    $ mkvirtualenv conda-forge-warning
-    $ cd conda-forge-warning/
-    $ python setup.py develop
+  - Download and install the needed version of Miniforge for your OS. [Miniforge Docs](https://github.com/conda-forge/miniforge).
 
-4.  Create a branch for local development::
+4.  Create and activate Conda Environment with Mamba:
 
+    ```
+    $ mamba env create -f conda/dev.yaml
+    $ conda activate cf-warning
+    ```
+
+5. Install dependencies with poetry:
+
+    With the conda environment activated, install project dependencies using poetry:
+
+    ```
+    $ poetry install
+    ```
+
+6. Configure env variables:
+
+  - Copy `.env.tpl` as `.env`
+
+  - Add your `GITHUB_TOKEN` to the `.env` file. If you need to generate a new token, follow the guide on [Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). Make sure to add the `repo scope`(Full control of private repositories)
+
+7. Run Makim tests:
+
+    ```
+    $ makim tests.unittest
+    ```
+
+    If test passed, congratulations you have set up correctly the project.
+
+8.  Create a branch for local development:
+    ```
     $ git checkout -b name-of-your-bugfix-or-feature
-
+    ```
     Now you can make your changes locally.
 
-5.  When you’re done making changes, check that your changes pass flake8
-    and the tests, including testing other Python versions with tox::
+9.  When you’re done making changes, check that your changes pass flake8 and the tests, including testing other Python versions with tox:
 
+    ```
     $ make lint
     $ make test
+    ```
 
     To get flake8 and tox, just pip install them into your virtualenv.
 
-6.  Commit your changes and push your branch to GitHub::
+10.  Commit your changes and push your branch to GitHub:
 
-    $ git add . $ git commit -m “Your detailed description of your
-    changes.” $ git push origin name-of-your-bugfix-or-feature
+    ```
+    $ git add .
+    $ git commit -m “Your detailed description of your changes.”
+    $ git push origin name-of-your-bugfix-or-feature
+    ```
 
-7.  Submit a pull request through the GitHub website.
+11.  Submit a pull request through the GitHub website.
 
 ## Pull Request Guidelines
 

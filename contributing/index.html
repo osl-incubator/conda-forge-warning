@@ -601,33 +601,62 @@ in docstrings, or even on the web in blog posts, articles, and such.</p>
 <p>Fork the <code>conda-forge-warning</code> repo on GitHub.</p>
 </li>
 <li>
-<p>Clone your fork locally::</p>
-<p>$ git clone <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#103;&#105;&#116;&#64;&#103;&#105;&#116;&#104;&#117;&#98;&#46;&#99;&#111;&#109;">&#103;&#105;&#116;&#64;&#103;&#105;&#116;&#104;&#117;&#98;&#46;&#99;&#111;&#109;</a>:your_name_here/conda-forge-warning.git</p>
+<p>Clone your fork locally:</p>
+<div class="highlight"><pre><span></span><code>$ git clone git@github.com:your_name_here/conda-forge-warning.git
+</code></pre></div>
 </li>
 <li>
-<p>Install your local copy into a virtualenv. Assuming you have
-    virtualenvwrapper installed, this is how you set up your fork for
-    local development::</p>
-<p>$ mkvirtualenv conda-forge-warning
-$ cd conda-forge-warning/
-$ python setup.py develop</p>
+<p>Make sure you got installed Miniforge</p>
 </li>
 <li>
-<p>Create a branch for local development::</p>
-<p>$ git checkout -b name-of-your-bugfix-or-feature</p>
-<p>Now you can make your changes locally.</p>
+<p>Download and install the needed version of Miniforge for your OS. <a href="https://github.com/conda-forge/miniforge">Miniforge Docs</a>.</p>
 </li>
 <li>
-<p>When you’re done making changes, check that your changes pass flake8
-    and the tests, including testing other Python versions with tox::</p>
-<p>$ make lint
-$ make test</p>
+<p>Create and activate Conda Environment with Mamba:</p>
+<div class="highlight"><pre><span></span><code>$ mamba env create -f conda/dev.yaml
+$ conda activate cf-warning
+</code></pre></div>
+</li>
+<li>
+<p>Install dependencies with poetry:</p>
+<p>With the conda environment activated, install project dependencies using poetry:</p>
+<div class="highlight"><pre><span></span><code>$ poetry install
+</code></pre></div>
+</li>
+<li>
+<p>Configure env variables:</p>
+</li>
+<li>
+<p>Copy <code>.env.tpl</code> as <code>.env</code></p>
+</li>
+<li>
+<p>Add your <code>GITHUB_TOKEN</code> to the <code>.env</code> file. If you need to generate a new token, follow the guide on <a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">Creating a personal access token</a>. Make sure to add the <code>repo scope</code>(Full control of private repositories)</p>
+</li>
+<li>
+<p>Run Makim tests:</p>
+<div class="highlight"><pre><span></span><code>$ makim tests.unittest
+</code></pre></div>
+<p>If test passed, congratulations you have set up correctly the project.</p>
+</li>
+<li>
+<p>Create a branch for local development:
+    <div class="highlight"><pre><span></span><code>$ git checkout -b name-of-your-bugfix-or-feature
+</code></pre></div>
+    Now you can make your changes locally.</p>
+</li>
+<li>
+<p>When you’re done making changes, check that your changes pass flake8 and the tests, including testing other Python versions with tox:</p>
+<div class="highlight"><pre><span></span><code>$ make lint
+$ make test
+</code></pre></div>
 <p>To get flake8 and tox, just pip install them into your virtualenv.</p>
 </li>
 <li>
-<p>Commit your changes and push your branch to GitHub::</p>
-<p>$ git add . $ git commit -m “Your detailed description of your
-changes.” $ git push origin name-of-your-bugfix-or-feature</p>
+<p>Commit your changes and push your branch to GitHub:</p>
+<div class="highlight"><pre><span></span><code>$ git add .
+$ git commit -m “Your detailed description of your changes.”
+$ git push origin name-of-your-bugfix-or-feature
+</code></pre></div>
 </li>
 <li>
 <p>Submit a pull request through the GitHub website.</p>
